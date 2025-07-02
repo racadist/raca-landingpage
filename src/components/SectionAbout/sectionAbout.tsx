@@ -3,9 +3,9 @@ import { Button } from "../ui/button";
 
 export function SectionAbout() {
   return (
-    <div className="container mx-auto px-4 mt-20">
+    <div className="container mx-auto px-4 mt-10">
       <div className="flex flex-col md:flex-row gap-10">
-        <div className="flex-1 flex items-center justify-center relative min-h-[400px]">
+        <div className="flex-1 flex items-center justify-center relative min-h-[400px] -mt-20">
           <div className="relative w-full max-w-[400px] h-[400px] sm:h-[450px]">
             <div className="absolute top-8 right-28 sm:right-32 w-[240px] sm:w-[320px] h-[240px] sm:h-[320px] rounded-xl bg-[#19233A] z-0" />
             <img

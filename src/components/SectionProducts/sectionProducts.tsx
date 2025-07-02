@@ -38,7 +38,7 @@ export function SectionProducts() {
               alt={product.name}
               className="w-full h-full object-cover transition-all duration-300"
             />
-            <div className="absolute inset-0 bg-black/30 flex flex-col justify-center items-center">
+            <div className="absolute inset-0 bg-[#EAF3FF80]/30 flex flex-col justify-center items-center">
               <span className="text-white text-3xl font-serif font-semibold mb-8 drop-shadow-lg text-center">
                 {product.name}
               </span>

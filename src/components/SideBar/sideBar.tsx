@@ -34,7 +34,7 @@ export function Sidebar({ menuButtonColor }: { menuButtonColor?: string }) {
         <nav className="flex flex-col gap-8 mt-10">
           <Link
             href="home"
-            className={`flex items-center gap-3 text-xl font-semibold font-poppins transition duration-200 hover:scale-105 hover:bg-[#BB1717] ${
+            className={`flex items-center gap-3 text-xl font-semibold font-poppins transition duration-200 hover:scale-105 hover:text-[#BB1717] ${
               pathname === "/home"
                 ? "text-[#BB1717]"
                 : "text-[#26294D]"
@@ -43,13 +43,13 @@ export function Sidebar({ menuButtonColor }: { menuButtonColor?: string }) {
             <Home size={24} />
             Início
             {pathname === "/home" && (
-              <span className="ml-auto h-8 w-[4px] bg-[#26294D] rounded-full" />
+              <span className="ml-auto h-8 w-[4px] bg-[#BB1717] rounded-full" />
             )}
           </Link>
 
           <Link
             href="about"
-            className={`flex items-center gap-3 text-xl font-medium font-poppins transition duration-200 hover:scale-105 hover:bg-[#BB1717] ${
+            className={`flex items-center gap-3 text-xl font-medium font-poppins transition duration-200 hover:scale-105 hover:text-[#BB1717] ${
               pathname === "/about"
               ? "text-[#BB1717]"
               : "text-[#26294D]"
@@ -64,7 +64,7 @@ export function Sidebar({ menuButtonColor }: { menuButtonColor?: string }) {
 
           <Link
             href="products"
-            className={`flex items-center gap-3 text-xl font-medium font-poppins transition duration-200 hover:scale-105 hover:bg-[#BB1717] ${
+            className={`flex items-center gap-3 text-xl font-medium font-poppins transition duration-200 hover:scale-105 hover:text-[#BB1717] ${
               pathname === "/products"
               ? "text-[#BB1717]"
               : "text-[#26294D]"
