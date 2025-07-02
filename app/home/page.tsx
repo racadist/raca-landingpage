@@ -35,7 +35,7 @@ export default function Home() {
       </section>
 
       {/* Seção About */}
-      <section className="mb-16">
+      <section className="mb-16 mt-22 sm:mt-10">
         <div className="container mx-auto">
           <SectionAbout />
         </div>

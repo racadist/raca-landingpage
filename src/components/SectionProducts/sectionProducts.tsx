@@ -20,15 +20,31 @@ const products = [
 ];
 
 export function SectionProducts() {
-    const [hovered, setHovered] = useState<number | null>(null);
-  
-    return (
-      <div className="flex justify-center items-stretch gap-0 my-10">
+  const [hovered, setHovered] = useState<number | null>(null);
+
+  return (
+    <div className="my-10 px-4">
+      <div
+        className={`
+          flex gap-4 sm:gap-6 md:gap-8
+          overflow-x-auto sm:overflow-visible
+          snap-x sm:snap-none
+          scrollbar-hide
+        `}
+      >
         {products.map((product, idx) => (
           <div
             key={product.id}
-            className={`relative flex-1 min-w-[320px] h-[320px] cursor-pointer overflow-hidden transition-all duration-300
-              ${hovered === idx ? "scale-105 z-20 shadow-2xl" : "scale-100 z-10"}
+            className={`
+              relative flex-shrink-0 sm:flex-1
+              w-[260px] sm:min-w-[320px] sm:h-[320px] h-[300px]
+              cursor-pointer overflow-hidden transition-all duration-300 rounded-xl
+              ${
+                hovered === idx && window.innerWidth >= 640
+                  ? "scale-105 z-20 shadow-2xl"
+                  : "scale-100 z-10"
+              }
+              snap-center
             `}
             onMouseEnter={() => setHovered(idx)}
             onMouseLeave={() => setHovered(null)}
@@ -39,15 +55,16 @@ export function SectionProducts() {
               className="w-full h-full object-cover transition-all duration-300"
             />
             <div className="absolute inset-0 bg-[#EAF3FF80]/30 flex flex-col justify-center items-center">
-              <span className="text-white text-3xl font-serif font-semibold mb-8 drop-shadow-lg text-center">
+              <span className="text-white text-2xl sm:text-3xl font-serif font-semibold mb-6 sm:mb-8 drop-shadow-lg text-center">
                 {product.name}
               </span>
-              <button className="px-8 py-3 bg-gray-500/80 text-white font-medium rounded transition hover:bg-gray-700/90">
+              <button className="px-6 py-2 sm:px-8 sm:py-3 bg-gray-500/80 text-white font-medium rounded transition hover:bg-gray-700/90">
                 Veja mais
               </button>
             </div>
           </div>
         ))}
       </div>
-    );
+    </div>
+  );
 }
