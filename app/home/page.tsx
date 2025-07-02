@@ -1,7 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 
-import { TopBar, SectionAbout, SectionTestimonials } from "@/components";
+import { TopBar, SectionAbout, SectionTestimonials, SectionProducts } from "@/components";
 
 
 export default function Home() {
@@ -40,12 +40,12 @@ export default function Home() {
           <SectionAbout />
         </div>
       </section>
+      <section>
+        <SectionProducts/>
+      </section>
       {/* Seção Depoimentos */}
       <section>
         <SectionTestimonials />
-      </section>
-      <section>
-        lalallalala
       </section>
     </main>
   );

@@ -34,10 +34,10 @@ export function Sidebar({ menuButtonColor }: { menuButtonColor?: string }) {
         <nav className="flex flex-col gap-8 mt-10">
           <Link
             href="home"
-            className={`flex items-center gap-3 text-xl font-semibold font-poppins transition duration-200 hover:scale-105 ${
+            className={`flex items-center gap-3 text-xl font-semibold font-poppins transition duration-200 hover:scale-105 hover:bg-[#BB1717] ${
               pathname === "/home"
-                ? "text-[#26294D]"
-                : "text-muted-foreground"
+                ? "text-[#BB1717]"
+                : "text-[#26294D]"
             }`}
           >
             <Home size={24} />
@@ -49,31 +49,31 @@ export function Sidebar({ menuButtonColor }: { menuButtonColor?: string }) {
 
           <Link
             href="about"
-            className={`flex items-center gap-3 text-xl font-medium font-poppins transition duration-200 hover:scale-105 ${
+            className={`flex items-center gap-3 text-xl font-medium font-poppins transition duration-200 hover:scale-105 hover:bg-[#BB1717] ${
               pathname === "/about"
-                ? "text-[#26294D]"
-                : "text-muted-foreground"
+              ? "text-[#BB1717]"
+              : "text-[#26294D]"
             }`}
           >
             <ImageIcon size={24} />
             Sobre nós
             {pathname === "/about" && (
-              <span className="ml-auto h-8 w-[4px] bg-[#26294D] rounded-full" />
+              <span className="ml-auto h-8 w-[4px] bg-[#BB1717] rounded-full" />
             )}
           </Link>
 
           <Link
             href="products"
-            className={`flex items-center gap-3 text-xl font-medium font-poppins transition duration-200 hover:scale-105 ${
+            className={`flex items-center gap-3 text-xl font-medium font-poppins transition duration-200 hover:scale-105 hover:bg-[#BB1717] ${
               pathname === "/products"
-                ? "text-[#26294D]"
-                : "text-muted-foreground"
+              ? "text-[#BB1717]"
+              : "text-[#26294D]"
             }`}
           >
             <Package size={24} />
             Produtos
             {pathname === "/products" && (
-              <span className="ml-auto h-8 w-[4px] bg-[#26294D] rounded-full" />
+              <span className="ml-auto h-8 w-[4px] bg-[#BB1717] rounded-full" />
             )}
           </Link>
         </nav>
