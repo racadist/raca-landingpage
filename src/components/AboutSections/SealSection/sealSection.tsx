@@ -22,10 +22,10 @@ const seals = [
 
 export function SealSection() {
   return (
-    <div className=" bg-[#E6F0FA] py-8">
+    <div className="w-full bg-[#E6F0FA] py-12 px-4">
       {/* Título */}
       <div className="text-center mb-14">
-        <p className="text-gray-500 text-2xl mb-2 font-comic-neue">
+        <p className="text-gray-500 text-xl sm:text-2xl mb-2 font-comic-neue">
           Quem confia na gente
         </p>
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-gray-900 font-poppins">
@@ -34,22 +34,25 @@ export function SealSection() {
       </div>
 
       {/* Cards */}
-      <div className="flex flex-wrap justify-center items-end gap-24">
+      <div className="flex sm:flex-wrap sm:justify-center gap-12 overflow-x-auto sm:overflow-x-visible px-2 sm:px-0 snap-x">
         {seals.map((seal, idx) => (
-          <div key={idx} className="flex flex-col items-center relative">
+          <div
+            key={idx}
+            className="flex flex-col items-center flex-shrink-0 snap-center"
+          >
             {/* Imagem redonda */}
-            <div className="w-56 h-56 sm:w-68 sm:h-68 rounded-full overflow-hidden shadow-xl bg-white">
+            <div className="w-44 h-44 sm:w-56 sm:h-56 rounded-full overflow-hidden shadow-xl bg-white">
               <Image
                 src={seal.image}
                 alt={seal.name}
                 width={224}
                 height={224}
-                className="object-cover w-full h-full justify-center"
+                className="object-cover w-full h-full"
               />
             </div>
 
             {/* Card com selo */}
-            <div className="flex items-center gap-2 bg-white rounded-xl shadow-md px-6 py-3 mt-[-24px] z-10">
+            <div className="flex items-center gap-2 bg-white rounded-xl shadow-md px-6 py-3 -mt-6 z-10">
               <span className="bg-[#bb1717] rounded-full p-2 flex items-center justify-center">
                 <BadgeCheck className="w-6 h-6 text-white" />
               </span>

@@ -23,17 +23,17 @@ const features = [
 export function DifferenceSection() {
   return (
     <section className="py-16 bg-white">
-      <div className=" mx-auto flex flex-col md:flex-row items-center gap-12">
+      <div className="container mx-auto flex flex-col lg:flex-row items-center gap-44 px-4">
         {/* Imagem com fundo azul */}
-        <div className="flex-1 flex justify-center relative">
+        <div className="flex-1 flex justify-center relative w-full max-w-[500px] mx-auto lg:mx-0">
           {/* Círculo azul atrás da imagem */}
-          <div className="hidden sm:block absolute left-1/3 -translate-x-1/2 sm:left-[5%] sm:translate-x-0 top-1/2 -translate-y-1/2 w-[300px] sm:w-[380px] md:w-[420px] h-[300px] sm:h-[380px] md:h-[420px] bg-[#E6F0FA] rounded-full z-0" />
-          <div className="relative rounded-xl overflow-hidden shadow-lg bg-white z-10 w-[240px] sm:w-[400px] md:w-[500px]">
+          <div className="hidden sm:block absolute right-7 -translate-x-1/2  sm:translate-x-0 top-1/2 -translate-y-1/2 w-[380px] sm:w-[560px] md:w-[540px] h-[380px] sm:h-[460px] md:h-[430px] bg-[#E6F0FA] rounded-full z-0" />
+          <div className="relative rounded-xl overflow-hidden shadow-lg bg-white z-10 w-[240px] sm:w-[380px] md:w-[460px]">
             <Image
               src="/img/homem_raça.png"
               alt="Entregador Raca Distribuição"
-              width={500}
-              height={550}
+              width={460}
+              height={500}
               className="object-cover w-full h-auto"
               priority
             />
@@ -52,12 +52,12 @@ export function DifferenceSection() {
             Lorem ipsum dolor sit amet adipiscing elit. Nulla placerat posuere dui. Pellentesque venenatis sem non lacus ac auctor.
           </p>
 
-          {/* Cards de destaque */}
+          {/* Cards */}
           <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 items-center justify-center sm:justify-start">
             {features.map((feature) => (
               <div
                 key={feature.title}
-                className={`flex flex-col items-center justify-center rounded-xl px-6 py-6 sm:px-8 sm:py-8 w-[170px] sm:w-43 sm:h-48 transition-colors ${
+                className={`flex flex-col items-center justify-center rounded-xl px-6 py-6 sm:px-8 sm:py-8 w-[160px] sm:w-[180px] transition-colors ${
                   feature.red ? "bg-[#bb1717] text-white" : "bg-[#0B1623] text-white"
                 }`}
               >
