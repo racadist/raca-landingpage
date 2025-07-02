@@ -1,13 +1,22 @@
-import { TopBar } from "@/components";
+import { TopBar, DifferenceSection, SealSection } from "@/components";
 
 export default function About() {
-    return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-        <TopBar menuButtonColor="[#26294D]" />
-        <h1 className="text-4xl font-bold">Sobre Nós</h1>
-        <p className="mt-4 text-lg">
-            em breve...
-        </p>
-    </main>
-    );
+  return (
+    <div className="relative">
+      <TopBar menuButtonColor="[#26294D]" />
+      <h1 className="text-5xl font-extrabold font-poppins mt-10 mb-6 text-center">
+        Sobre Nós
+      </h1>
+
+      <section className="mb-16 px-4 sm:px-10">
+        <div className="container mx-auto">
+          <DifferenceSection />
+        </div>
+      </section>
+
+      <section className="mb-16">
+        <SealSection />
+      </section>
+    </div>
+  );
 }

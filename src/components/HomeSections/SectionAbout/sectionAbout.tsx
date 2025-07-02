@@ -1,5 +1,5 @@
 import { Check } from "lucide-react";
-import { Button } from "../ui/button";
+import { Button } from "../../ui/button";
 
 export function SectionAbout() {
   return (
@@ -51,8 +51,9 @@ export function SectionAbout() {
             </div>
           </div>
           <Button
+            onClick={() => window.location.href = "/about"}
             size="lg"
-            className="bg-[#BB1717] text-white mt-6 hover:bg-[#BB1717]/90 transition hover:scale-105 font-poppins font-bold h-14 text-lg sm:text-xl"
+            className="bg-[#BB1717] text-white mt-6 hover:bg-[#BB1717]/90 transition hover:scale-105 font-poppins font-bold h-14 text-lg sm:text-xl cursor-pointer"
           >
             Saiba mais
           </Button>
