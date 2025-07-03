@@ -5,17 +5,17 @@ const products = [
   {
     id: 1,
     name: "Produto 1",
-    image: "/img/homem_raça.png",
+    image: "/img/products.png",
   },
   {
     id: 2,
     name: "Produto 2",
-    image: "/img/homem_raça.png",
+    image: "/img/products.png",
   },
   {
     id: 3,
     name: "Produto 3",
-    image: "/img/homem_raça.png",
+    image: "/img/products.png",
   },
 ];
 
@@ -54,11 +54,11 @@ export function SectionProducts() {
               alt={product.name}
               className="w-full h-full object-cover transition-all duration-300"
             />
-            <div className="absolute inset-0 bg-[#EAF3FF80]/30 flex flex-col justify-center items-center">
-              <span className="text-white text-2xl sm:text-3xl font-serif font-semibold mb-6 sm:mb-8 drop-shadow-lg text-center">
+            <div className="absolute inset-0 bg-[#EAF3FF80]/80 flex flex-col px-4 sm:px-6">
+              <span className="text-xl sm:text-4xl font-poppins font-extrabold mb-6 sm:mb-8 drop-shadow-lg text-left self-start">
                 {product.name}
               </span>
-              <button className="px-6 py-2 sm:px-8 sm:py-3 bg-gray-500/80 text-white font-medium rounded transition hover:bg-gray-700/90">
+              <button className="px-6 py-2 sm:px-8 sm:py-3 bg-gray-500/80 text-white font-semibold font-poppins rounded transition hover:bg-[#BB1717] cursor-pointer self-start">
                 Veja mais
               </button>
             </div>

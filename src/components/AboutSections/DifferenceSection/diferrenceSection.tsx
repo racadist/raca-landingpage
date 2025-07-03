@@ -42,7 +42,7 @@ export function DifferenceSection() {
 
         {/* Conteúdo */}
         <div className="flex-1 text-center md:text-left">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-gray-900 mb-4 sm:mb-6 font-poppins">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl text-gray-900 mb-4 sm:mb-6 font-poppins">
             O que nos diferencia
           </h2>
           <p className="text-gray-500 text-base sm:text-lg mb-4">

@@ -18,7 +18,7 @@ export function SectionTestimonials() {
       <div className="flex flex-col sm:flex-row justify-center items-center gap-6 sm:gap-8">
         <button
           onClick={prev}
-          className="p-2 rounded-full border border-[#BB1717] hover:bg-[#BB1717]/10 transition"
+          className="p-2 rounded-full border border-[#BB1717] hover:bg-[#BB1717]/10 transition cursor-pointer"
         >
           <ChevronLeft className="text-[#BB1717]" />
         </button>
@@ -42,7 +42,7 @@ export function SectionTestimonials() {
 
         <button
           onClick={next}
-          className="p-2 rounded-full border border-[#BB1717] hover:bg-[#BB1717]/10 transition"
+          className="p-2 rounded-full border border-[#BB1717] hover:bg-[#BB1717]/10 transition cursor-pointer"
         >
           <ChevronRight className="text-[#BB1717]" />
         </button>

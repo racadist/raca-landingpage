@@ -1,19 +1,12 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 import { TopBar, SectionAbout, SectionTestimonials, SectionProducts } from "@/components";
 
 
 export default function Home() {
-  const [menuButtonColor, setMenuButtonColor] = useState("white");
-  useEffect(() => {
-    const handleScroll = () => {
-      setMenuButtonColor(window.scrollY > 0 ? "black" : "white");
-    };
+  const [menuButtonColor] = useState("black");
 
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
   return (
     <main className="relative">
       <TopBar menuButtonColor={menuButtonColor} />
@@ -29,7 +22,7 @@ export default function Home() {
             <h1 className="text-3xl sm:text-5xl md:text-6xl font-extrabold font-poppins leading-tight mb-6">
               Distribuindo <br /> Qualidade e Confiança
             </h1>
-            <h2 className="text-2xl sm:text-3xl font-light font-poppins">desde 1992</h2>
+            <h2 className="text-2xl sm:text-3xl font-light font-poppins">Desde 1992</h2>
           </div>
         </div>
       </section>
@@ -40,6 +33,7 @@ export default function Home() {
           <SectionAbout />
         </div>
       </section>
+      {/* Seção Produtos */}
       <section>
         <SectionProducts/>
       </section>
