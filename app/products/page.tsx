@@ -1,13 +1,13 @@
-import { TopBar } from "@/components";
+import { SegmentsSection, TopBar } from "@/components";
 
 export default function Products() {
     return (
-        <main className="flex min-h-screen flex-col items-center justify-between p-24">
+        <div className="relative">
             <TopBar menuButtonColor="[#26294D]" />
-        <h1 className="text-4xl font-bold">Produtos</h1>
-        <p className="mt-4 text-lg">
-            em breve...
-        </p>
-        </main>
+            <h1 className="text-5xl font-extrabold font-poppins mt-24 mb-6 text-center">
+                Explore nossos produtos
+            </h1>
+            <SegmentsSection />
+        </div>
     );
 }
