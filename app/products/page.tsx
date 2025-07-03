@@ -1,4 +1,4 @@
-import { SegmentsSection, TopBar } from "@/components";
+import { SegmentsSection, ContactMapSection, TopBar } from "@/components";
 
 export default function Products() {
     return (
@@ -8,6 +8,7 @@ export default function Products() {
                 Explore nossos produtos
             </h1>
             <SegmentsSection />
+            <ContactMapSection />
         </div>
     );
 }
