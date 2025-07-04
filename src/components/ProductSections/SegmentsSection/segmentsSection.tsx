@@ -40,7 +40,7 @@ const responsive = {
 
 export function SegmentsSection() {
   return (
-    <section className="bg-[#E6F0FA] py-12 text-center">
+    <section className="bg-[#fafcff] py-12 text-center">
       <h2 className="text-2xl md:text-3xl font-semibold font-comic-neue text-[#7c8493] mb-10">
         Nossos Segmentos
       </h2>

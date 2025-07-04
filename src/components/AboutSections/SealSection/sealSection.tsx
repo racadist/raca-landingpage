@@ -22,7 +22,7 @@ const seals = [
 
 export function SealSection() {
   return (
-    <div className="w-full bg-[#E6F0FA] py-12 px-4">
+    <div className="w-full bg-[#F9FAFB] py-12 px-4">
       {/* Título */}
       <div className="text-center mb-14">
         <p className="text-gray-500 text-xl sm:text-2xl mb-2 font-comic-neue">

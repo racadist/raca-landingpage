@@ -23,11 +23,11 @@ const features = [
 export function DifferenceSection() {
   return (
     <section className="py-16 bg-white">
-      <div className="container mx-auto flex flex-col lg:flex-row items-center gap-44 px-4">
+      <div className="container mx-auto flex flex-col lg:flex-row items-center gap-44 md:gap-24 px-4">
         {/* Imagem com fundo azul */}
         <div className="flex-1 flex justify-center relative w-full max-w-[500px] mx-auto lg:mx-0">
           {/* Círculo azul atrás da imagem */}
-          <div className="hidden sm:block absolute right-7 -translate-x-1/2  sm:translate-x-0 top-1/2 -translate-y-1/2 w-[380px] sm:w-[560px] md:w-[540px] h-[380px] sm:h-[460px] md:h-[430px] bg-[#E6F0FA] rounded-full z-0" />
+          <div className="hidden sm:block absolute right-7 -translate-x-1/2 sm:translate-x-0 top-1/2 -translate-y-1/2 w-[380px] sm:w-[560px] md:w-[540px] h-[380px] sm:h-[460px] md:h-[430px] bg-[#E6F0FA] rounded-full z-0" />
           <div className="relative rounded-xl overflow-hidden shadow-lg bg-white z-10 w-[240px] sm:w-[380px] md:w-[460px]">
             <Image
               src="/img/homem_raça.png"

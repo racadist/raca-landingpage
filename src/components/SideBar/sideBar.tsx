@@ -33,22 +33,22 @@ export function Sidebar({ menuButtonColor }: { menuButtonColor?: string }) {
         </SheetHeader>
         <nav className="flex flex-col gap-8 mt-10">
           <Link
-            href="home"
+            href="/home"
             className={`flex items-center gap-3 text-xl font-semibold font-poppins transition duration-200 hover:scale-105 hover:text-[#BB1717] ${
-              pathname === "/home"
+              pathname === "/home" || pathname === "/"
                 ? "text-[#BB1717]"
                 : "text-[#26294D]"
             }`}
           >
             <Home size={24} />
             Início
-            {pathname === "/home" && (
+            {(pathname === "/home" || pathname === "/") && (
               <span className="ml-auto h-8 w-[4px] bg-[#BB1717] rounded-full" />
             )}
           </Link>
 
           <Link
-            href="about"
+            href="/about"
             className={`flex items-center gap-3 text-xl font-medium font-poppins transition duration-200 hover:scale-105 hover:text-[#BB1717] ${
               pathname === "/about"
               ? "text-[#BB1717]"
@@ -63,7 +63,7 @@ export function Sidebar({ menuButtonColor }: { menuButtonColor?: string }) {
           </Link>
 
           <Link
-            href="products"
+            href="/products"
             className={`flex items-center gap-3 text-xl font-medium font-poppins transition duration-200 hover:scale-105 hover:text-[#BB1717] ${
               pathname === "/products"
               ? "text-[#BB1717]"

@@ -1,66 +1,68 @@
 "use client";
-import React, { useState } from "react";
-import { MapPin } from "lucide-react";
 
-export const representatives = [
+import Image from "next/image";
+import { motion } from "motion/react";
+
+export const representantes = [
   {
-    id: "zona-da-mata",
-    name: "Zona da Mata",
-    phone: "(81) 99999-1234",
-    top: "70%", // ajuste conforme imagem
-    left: "20%",
+    nome: "Maria Oliveira",
+    cidade: "Recife",
+    regiao: "Região Metropolitana",
+    whatsapp: "5581999999999",
   },
   {
-    id: "sertao",
-    name: "Sertão",
-    phone: "(87) 98888-4321",
-    top: "84%",
-    left: "87%",
+    nome: "João Silva",
+    cidade: "Caruaru",
+    regiao: "Agreste",
+    whatsapp: "5581988888888",
   },
 ];
 
 export function ContactMapSection() {
-  const [hoveredId, setHoveredId] = useState<string | null>(null);
-
   return (
-    <section className="relative py-12 px-4">
-      <h2 className="text-3xl sm:text-4xl font-extrabold text-center text-[#0B1A2A] font-poppins mb-6 sm:mb-0">
+    <section className="w-full px-4 py-12 bg-[#F9FAFB] font-poppins">
+      <h2 className="text-center text-2xl md:text-4xl font-bold mb-10 text-[#26294D]">
         Entre em contato com nossos representantes
       </h2>
 
-      <div className="relative max-w-4xl sm:max-w-5xl mx-auto w-full">
-        {/* Mapa de Pernambuco */}
-        <div className="relative w-full">
-          <img
-            src="/img/mapa_pernambuco.png"
+      {/* Layout responsivo */}
+      <div className="flex flex-col lg:flex-row gap-10 max-w-6xl mx-auto items-center">
+        {/* Imagem do mapa */}
+        <div className="w-full lg:w-1/2 flex justify-center">
+          <Image
+            src="/img/mapa_pernambuco.png" 
             alt="Mapa de Pernambuco"
-            className="w-full h-auto"
+            width={500}
+            height={350}
+            className="object-contain"
           />
+        </div>
 
-        {/* Pins de localização */}
-        {representatives.map((rep) => (
-          <div
-            key={rep.id}
-            className="absolute z-10"
-            style={{ top: rep.top, left: rep.left, transform: "translate(-50%, -100%)" }}
-            onMouseEnter={() => setHoveredId(rep.id)}
-            onMouseLeave={() => setHoveredId(null)}
-          >
-            <div className="flex flex-col items-center group cursor-pointer">
-              <MapPin className="w-16 h-16 text-[#0B1A2A] drop-shadow-md" />
-
-              <div
-                className={`mt-2 bg-white rounded-lg shadow-lg px-4 py-2 text-sm text-left transition-opacity duration-300 ease-in-out
-                  ${hoveredId === rep.id ? "opacity-100 visible" : "opacity-0 invisible"}
-                `}
-              >
-                <p className="font-bold text-[#BB1717]">{rep.name}</p>
-                <p className="text-gray-700">{rep.phone}</p>
-              </div>
-            </div>
-          </div>
-        ))}
-      </div>
+        {/* Lista de representantes */}
+        <div className="w-full lg:w-1/2 grid grid-cols-1 sm:grid-cols-2 gap-6">
+          {representantes.map((rep, index) => (
+            <motion.div
+              key={rep.nome}
+              initial={{ opacity: 0, y: 40 }}
+              animate={{ opacity: 2, y: 0 }}
+              transition={{ delay: 0.6 * index, duration: 0.5 }}
+              className="bg-white rounded-xl shadow p-5 hover:shadow-lg transition"
+            >
+              <h3 className="text-xl font-semibold text-[#bb1717]">
+          {rep.nome}
+              </h3>
+              <p className="text-sm text-gray-600 mt-1">{rep.regiao}</p>
+              <p className="text-sm text-gray-600 mt-1">📍 {rep.cidade}</p>
+              <a
+                href={`https://wa.me/${rep.whatsapp}`}
+                target="_blank"
+                className="inline-block mt-4 bg-[#26294D] text-white px-4 py-2 rounded-full text-sm hover:bg-[#bb1717] transition"
+                    >
+                    Entrar em contato
+              </a>
+            </motion.div>
+          ))}
+        </div>
       </div>
     </section>
   );

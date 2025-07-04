@@ -1,21 +1,23 @@
 "use client";
 import React, { useState } from "react";
+import Image from "next/image";
+import { LeitesRegulares, LeitesEspeciais, Queijos } from "@/assets";
 
 const products = [
   {
     id: 1,
-    name: "Produto 1",
-    image: "/img/products.png",
+    name: "Leites Regulares",
+    image: LeitesRegulares,
   },
   {
     id: 2,
-    name: "Produto 2",
-    image: "/img/products.png",
+    name: "Leites Especiais",
+    image: LeitesEspeciais,
   },
   {
     id: 3,
-    name: "Produto 3",
-    image: "/img/products.png",
+    name: "Queijos",
+    image: Queijos,
   },
 ];
 
@@ -24,47 +26,45 @@ export function SectionProducts() {
 
   return (
     <div className="my-10 px-4">
-      <div
-        className={`
-          flex gap-4 sm:gap-6 md:gap-8
-          overflow-x-auto sm:overflow-visible
-          snap-x sm:snap-none
-          scrollbar-hide
-        `}
-      >
-        {products.map((product, idx) => (
-          <div
-            key={product.id}
+    <div
+      className={`
+        flex sm:gap-4 gap-0
+        overflow-x-auto 
+        snap-x sm:snap-none
+        scrollbar-hide md:overflow-x-auto
+      `}
+    >
+      {products.map((product, idx) => (
+        <div
+          key={product.id}
+          className="
+            relative flex-shrink-0 sm:flex-1
+            w-[230px] sm:max-h-[300px]
+            cursor-pointer overflow-hidden transition-all duration-300 rounded-xl
+            snap-center"
+          onMouseEnter={() => setHovered(idx)}
+          onMouseLeave={() => setHovered(null)}
+        >
+          <Image
+            src={product.image}
+            alt={product.name}
             className={`
-              relative flex-shrink-0 sm:flex-1
-              w-[260px] sm:min-w-[320px] sm:h-[320px] h-[300px]
-              cursor-pointer overflow-hidden transition-all duration-300 rounded-xl
-              ${
-                hovered === idx && window.innerWidth >= 640
-                  ? "scale-105 z-20 shadow-2xl"
-                  : "scale-100 z-10"
-              }
-              snap-center
+              w-full h-full object-contain
+              relative 
+              ${hovered === idx ? "transition-all scale-120 duration-300" : "z-0"}
             `}
-            onMouseEnter={() => setHovered(idx)}
-            onMouseLeave={() => setHovered(null)}
-          >
-            <img
-              src={product.image}
-              alt={product.name}
-              className="w-full h-full object-cover transition-all duration-300"
-            />
-            <div className="absolute inset-0 bg-[#EAF3FF80]/80 flex flex-col px-4 sm:px-6">
-              <span className="text-xl sm:text-4xl font-poppins font-extrabold mb-6 sm:mb-8 drop-shadow-lg text-left self-start">
-                {product.name}
-              </span>
-              <button className="px-6 py-2 sm:px-8 sm:py-3 bg-gray-500/80 text-white font-semibold font-poppins rounded transition hover:bg-[#BB1717] cursor-pointer self-start">
-                Veja mais
-              </button>
-            </div>
+          />
+          <div className="absolute inset-0 bg-gray-400/30 flex flex-col px-4 sm:px-6">
+            <span className="text-xl sm:text-4xl font-poppins font-extrabold mb-6 sm:mb-8 mt-2 drop-shadow-lg text-left self-start">
+              {product.name}
+            </span>
+            <button className="px-6 py-2 sm:px-8 sm:py-3 bg-gray-500/80 text-white font-semibold font-poppins rounded transition hover:bg-[#BB1717] cursor-pointer self-start">
+              Veja mais
+            </button>
           </div>
-        ))}
-      </div>
+        </div>
+      ))}
     </div>
+  </div>
   );
 }

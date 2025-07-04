@@ -10,7 +10,7 @@ export function SectionTestimonials() {
   const next = () => setCurrent((prev) => (prev === testimonials.length - 1 ? 0 : prev + 1));
 
   return (
-    <div className="bg-[#E6F0FA] py-12 px-4 sm:px-6 md:px-12">
+    <div className="bg-[#F9FAFB] py-12 px-4 sm:px-6 md:px-12">
       <h1 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-center py-6 sm:py-8 font-poppins text-[#0B1A2A]">
         Veja o que nossos clientes falam da gente
       </h1>

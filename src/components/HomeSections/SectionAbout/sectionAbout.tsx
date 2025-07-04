@@ -16,7 +16,7 @@ export function SectionAbout() {
             <img
               src="/img/homem_raça.png"
               alt="Entregador"
-              className="absolute sm:bottom-[-90px] right-0 left-37 xl:-left-20 xl:right-80 w-[180px] sm:w-[220px] md:w-[260px] h-auto rounded-xl object-cover z-20 shadow-xl"
+              className="absolute sm:bottom-[-90px] right-0 left-37 md:left-0 xl:-left-20 xl:right-80 w-[180px] sm:w-[220px] md:w-[260px] h-auto rounded-xl object-cover z-20 shadow-xl"
             />
           </div>
         </div>
