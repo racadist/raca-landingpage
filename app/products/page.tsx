@@ -1,4 +1,4 @@
-import { SegmentsSection, ContactMapSection, TopBar } from "@/components";
+import { SegmentsSection, ContactMapSection, TopBar, GridProducts } from "@/components";
 
 export default function Products() {
     return (
@@ -7,6 +7,7 @@ export default function Products() {
             <h1 className="text-5xl font-extrabold font-poppins mt-24 mb-6 text-center">
                 Explore nossos produtos
             </h1>
+            <GridProducts />
             <SegmentsSection />
             <ContactMapSection />
         </div>

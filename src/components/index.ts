@@ -7,5 +7,6 @@ import { DifferenceSection } from "./AboutSections/DifferenceSection/diferrenceS
 import { SealSection } from "./AboutSections/SealSection/sealSection";
 import { SegmentsSection } from "./ProductSections/SegmentsSection/segmentsSection";
 import { ContactMapSection } from "./ProductSections/ContactSection/contactSection";
+import { GridProducts } from "./ProductSections/GridProducts/gridProducts";
 
-export { Sidebar, TopBar, SectionAbout, SectionTestimonials, SectionProducts, DifferenceSection, SealSection, SegmentsSection, ContactMapSection };
+export { Sidebar, TopBar, SectionAbout, SectionTestimonials, SectionProducts, DifferenceSection, SealSection, SegmentsSection, ContactMapSection, GridProducts };

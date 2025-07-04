@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import { MapPin } from "lucide-react";
 
-const representatives = [
+export const representatives = [
   {
     id: "zona-da-mata",
     name: "Zona da Mata",
@@ -14,8 +14,8 @@ const representatives = [
     id: "sertao",
     name: "Sertão",
     phone: "(87) 98888-4321",
-    top: "95%",
-    left: "85%",
+    top: "84%",
+    left: "87%",
   },
 ];
 
@@ -25,7 +25,7 @@ export function ContactMapSection() {
   return (
     <section className="relative py-12 px-4">
       <h2 className="text-3xl sm:text-4xl font-extrabold text-center text-[#0B1A2A] font-poppins mb-6 sm:mb-0">
-        Fale com nossos representantes
+        Entre em contato com nossos representantes
       </h2>
 
       <div className="relative max-w-4xl sm:max-w-5xl mx-auto w-full">
