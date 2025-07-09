@@ -3,11 +3,7 @@ import Image from "next/image";
 import { Sidebar } from "@/components/SideBar/sideBar";
 import { Button } from "../ui/button";
 
-interface TopBarProps {
-  menuButtonColor?: string;
-}
-
-export function TopBar({ menuButtonColor }: TopBarProps) {
+export function TopBar() {
   return (
     <header className="fixed top-0 left-0 w-full flex items-center justify-between px-6 py-4 z-40 bg-white">
       {/* Logo */}
@@ -22,7 +18,7 @@ export function TopBar({ menuButtonColor }: TopBarProps) {
         />
         </Button>
       </div>
-      <Sidebar menuButtonColor={menuButtonColor} />
+      <Sidebar />
     </header>
   );
 }
