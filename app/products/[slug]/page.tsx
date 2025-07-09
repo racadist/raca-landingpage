@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React from "react";
 import { motion } from "motion/react";
 import Image from "next/image";
 import { products } from "@/data/products"; 
@@ -8,9 +8,14 @@ import { Button } from "@/components/ui/button";
 import { ChevronDown } from "lucide-react";
 import { representantes } from "@/components/ProductSections/ContactSection/contactSection";
 
-export default function ProdutoPage({ params }: { params: { slug: string } }) {
-  const product = products.find((p) => p.id === params.slug);
-  const [hoveredId, setHoveredId] = useState<string | null>(null);
+interface PageProps {
+  params: Promise<{ slug: string }>;
+}
+
+export default async function ProductPage({ params }: PageProps) {
+  const { slug } = await params;
+  
+  const product = products.find((p) => p.id === slug);
 
   if (!product) {
     return (

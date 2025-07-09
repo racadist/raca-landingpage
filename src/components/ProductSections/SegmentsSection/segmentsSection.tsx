@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import Carousel from "react-multi-carousel";
+import Image from "next/image";
 import "react-multi-carousel/lib/styles.css";
 
 const segments = [
@@ -61,7 +62,9 @@ export function SegmentsSection() {
               key={segment.name}
               className="flex mx-4"
             >
-              <img
+              <Image
+                width={200}
+                height={200}
                 src={segment.img}
                 alt={segment.alt}
                 draggable={false}

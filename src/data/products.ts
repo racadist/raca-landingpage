@@ -17,6 +17,22 @@ import {
   CremeDeLeiteNolac,
   LeiteCondensadoSemiDesnatado,
   CremeDeLeiteLevissimo,
+  CreamCheese,
+  CremeRicota,
+  CremeRicotaLight,
+  LeiteEmPoDesnatadoInstantaneo,
+  LeiteEmPoIntegral,
+  LeiteEmPoIntegralInstantaneo,
+  LeiteEmPoNolac,
+  LeiteEmPoPouchIntegral,
+  LeiteEmPoPouchInstantaneo,
+  RequeijaoCremoso,
+  RequeijaoLight,
+  RequeijaoNolac,
+  BebidaChocolate,
+  BebidaMorango,
+  BebidaUHTChocolate,
+  BebidaVitamina
 } from "@/assets";
 import type { StaticImageData } from "next/image";
 
@@ -135,6 +151,102 @@ export interface Product {
       name: "Leite Desnatado",
       description: "Leite desnatado leve",
       image: LeiteDesnatado,
+    }, 
+    {
+    id: "cream-cheese",
+      name: "Cream Cheese",
+      description: "Cream cheese cremoso e saboroso",
+      image: CreamCheese,
+    },
+    {
+      id: "creme-ricota",
+      name: "Creme de Ricota",
+      description: "Creme de ricota leve e saudável",
+      image: CremeRicota,
+    },
+    {
+      id: "creme-ricota-light",
+      name: "Creme de Ricota Light",
+      description: "Creme de ricota light com menos calorias",
+      image: CremeRicotaLight,
+    },
+    {
+      id: "requeijao-cremoso",
+      name: "Requeijão Cremoso",
+      description: "Requeijão cremoso e saboroso",
+      image: RequeijaoCremoso,  
+    },
+    {
+      id: "requeijao-light",
+      name: "Requeijão Light",
+      description: "Requeijão light com menos calorias",
+      image: RequeijaoLight,  
+    },
+    {
+      id: "requeijao-nolac",
+      name: "Requeijão Nolac",
+      description: "Requeijão sem lactose",
+      image: RequeijaoNolac,  
+    },
+    {
+      id: "leite-em-po-integral",
+      name: "Leite em Pó Integral",
+      description: "Leite em pó integral para uso culinário",
+      image: LeiteEmPoIntegral,
+    },
+    {
+      id: "leite-em-po-nolac",
+      name: "Leite em Pó Nolac",
+      description: "Leite em pó sem lactose",
+      image: LeiteEmPoNolac,
+    },
+    {
+      id: "leite-em-po-pouch-integral",
+      name: "Leite em Pó Pouch Integral",
+      description: "Leite em pó integral em embalagem pouch",
+      image: LeiteEmPoPouchIntegral,
+    },
+    {
+      id: "leite-em-po-instantaneo-pouch",
+      name: "Leite em Pó Pouch Instantâneo",
+      description: "Leite em pó instantâneo em embalagem pouch",
+      image: LeiteEmPoPouchInstantaneo,
+    },
+    {
+      id: "leite-em-po-desnatado-instantaneo",
+      name: "Leite em Pó Desnatado Instantâneo",
+      description: "Leite em pó desnatado instantâneo",
+      image: LeiteEmPoDesnatadoInstantaneo,
+    },
+    {
+      id: "leite-em-po-integral-instantaneo",
+      name: "Leite em Pó Integral Instantâneo",
+      description: "Leite em pó integral instantâneo",
+      image: LeiteEmPoIntegralInstantaneo,
+    },
+    {
+      id: "bebida-chocolate",
+      name: "Bebida de Chocolate",
+      description: "Bebida láctea sabor chocolate",
+      image: BebidaChocolate,
+    },
+    {
+      id: "bebida-morango",
+      name: "Bebida de Morango",
+      description: "Bebida láctea sabor morango",
+      image: BebidaMorango,
+    },
+    {
+      id: "bebida-vitamina",
+      name: "Bebida de Vitamina",
+      description: "Bebida láctea sabor vitamina",
+      image: BebidaVitamina,
+    },
+    {
+      id: "bebida-uht-chocolate",
+      name: "Bebida UHT de Chocolate",
+      description: "Bebida láctea UHT sabor chocolate",
+      image: BebidaUHTChocolate,
     }
   ];
   
