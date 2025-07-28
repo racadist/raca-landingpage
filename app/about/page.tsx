@@ -1,10 +1,9 @@
-import { TopBar, DifferenceSection, SealSection } from "@/components";
+import { DifferenceSection, SealSection } from "@/components";
 
 export default function About() {
   return (
     <div className="relative">
-      <TopBar menuButtonColor="[#26294D]" />
-      <h1 className="text-5xl font-extrabold font-poppins mt-24 mb-6 text-center">
+      <h1 className="text-5xl font-extrabold font-gilroy mt-24 mb-6 text-center">
         Sobre Nós
       </h1>
 

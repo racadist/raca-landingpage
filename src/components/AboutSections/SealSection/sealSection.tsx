@@ -4,19 +4,16 @@ import { BadgeCheck } from "lucide-react";
 
 const seals = [
   {
-    name: "Jessica Brown",
-    role: "Farmer",
+    name: "Qualidade Logistíca",
     image: "/img/seal_1.png",
   },
   {
-    name: "Jessica Brown",
-    role: "Farmer",
-    image: "/img/seal_1.png",
+    name: "Distribuidor Itambé",
+    image: "/img/seal_2.png",
   },
   {
-    name: "Jessica Brown",
-    role: "Farmer",
-    image: "/img/seal_1.png",
+    name: "Experiência de Mercado",
+    image: "/img/seal_3.png",
   },
 ];
 
@@ -59,9 +56,6 @@ export function SealSection() {
               <div className="flex flex-col">
                 <span className="text-[#bb1717] font-bold text-lg leading-tight">
                   {seal.name}
-                </span>
-                <span className="text-gray-400 text-sm -mt-1">
-                  {seal.role}
                 </span>
               </div>
             </div>

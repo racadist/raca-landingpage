@@ -12,13 +12,12 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-export function Sidebar({ menuButtonColor }: { menuButtonColor?: string }) {
+export function Sidebar() {
   const pathname = usePathname();
-  console.log(menuButtonColor)
   return (
     <Sheet>
       <SheetTrigger asChild>
-        <Button variant="ghost" className={`hover:bg-transparent hover:text-${menuButtonColor} text-${menuButtonColor} transition hover:scale-105 duration-200 rounded-full p-2`}>
+        <Button variant="ghost" className={`hover:bg-transparent transition hover:scale-105 duration-200 rounded-full p-2`}>
           <Menu className="size-12 bg-none"/>
         </Button>
       </SheetTrigger>

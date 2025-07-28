@@ -10,41 +10,43 @@ export function SectionTestimonials() {
   const next = () => setCurrent((prev) => (prev === testimonials.length - 1 ? 0 : prev + 1));
 
   return (
-    <div className="bg-[#F9FAFB] py-12 px-4 sm:px-6 md:px-12">
-      <h1 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-center py-6 sm:py-8 font-poppins text-[#0B1A2A]">
+    <div className="bg-[#F9FAFB] py-14 px-4 sm:px-6 md:px-12">
+      <h1 className="text-2xl sm:text-3xl md:text-5xl font-extrabold text-center py-6 sm:py-8 font-gilroy text-[#0B1A2A] mb-9">
         Veja o que nossos clientes falam da gente
       </h1>
 
-      <div className="flex flex-col sm:flex-row justify-center items-center gap-6 sm:gap-8">
+      <div className="flex flex-col sm:flex-row justify-center items-center gap-10 sm:gap-16">
         <button
           onClick={prev}
-          className="p-2 rounded-full border border-[#BB1717] hover:bg-[#BB1717]/10 transition cursor-pointer"
+          className="p-3 sm:p-4 rounded-full border border-[#BB1717] hover:bg-[#BB1717]/10 transition cursor-pointer"
+          style={{ marginRight: '0.5rem' }}
         >
-          <ChevronLeft className="text-[#BB1717]" />
+          <ChevronLeft className="text-[#BB1717] w-7 h-7 sm:w-9 sm:h-9" />
         </button>
 
-        <div className="relative mt-4 sm:mt-6 max-w-full sm:max-w-[520px] w-full px-4 sm:px-0">
+        <div className="relative mt-4 sm:mt-6 max-w-full sm:max-w-[700px] w-full px-4 sm:px-0">
           <img
-            src="img/quote-big.png"
-            alt="Quote Big"
-            className="absolute -top-6 -left-6 sm:-top-8 sm:-left-8 w-12 h-12 sm:w-20 sm:h-20 z-0"
+        src="img/quote-big.png"
+        alt="Quote Big"
+        className="absolute -top-8 -left-8 sm:-top-12 sm:-left-12 w-16 h-16 sm:w-24 sm:h-24 z-0"
           />
-          <div className="bg-[#19233A] text-white rounded shadow-lg px-6 sm:px-10 py-6 sm:py-8 z-10 relative h-60">
-            <p className="text-base sm:text-lg md:text-xl font-poppins mb-4 sm:mb-6">
-              {testimonials[current].text}
-            </p>
-            <div className="absolute bottom-4 right-4">
-              <div className="font-bold">{testimonials[current].name}</div>
-              <div className="text-[#BB1717] font-semibold text-sm">{testimonials[current].role}</div>
-            </div>
+          <div className="bg-[#19233A] text-white rounded shadow-lg px-12 sm:px-16 py-12 sm:py-16 z-10 relative h-72 flex flex-col justify-between">
+        <p className="text-lg sm:text-xl md:text-2xl font-poppins mb-6 sm:mb-8">
+          {testimonials[current].text}
+        </p>
+        <div className="self-end">
+          <div className="font-bold">{testimonials[current].name}</div>
+          <div className="text-[#BB1717] font-semibold text-base">{testimonials[current].role}</div>
+        </div>
           </div>
         </div>
 
         <button
           onClick={next}
-          className="p-2 rounded-full border border-[#BB1717] hover:bg-[#BB1717]/10 transition cursor-pointer"
+          className="p-3 sm:p-4 rounded-full border border-[#BB1717] hover:bg-[#BB1717]/10 transition cursor-pointer"
+          style={{ marginLeft: '0.5rem' }}
         >
-          <ChevronRight className="text-[#BB1717]" />
+          <ChevronRight className="text-[#BB1717] w-7 h-7 sm:w-9 sm:h-9" />
         </button>
       </div>
 

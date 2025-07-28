@@ -1,21 +1,21 @@
 import React from "react";
 import Image from "next/image";
-import { User } from "lucide-react";
+import { User, Forklift, Handshake, BadgeCheck } from "lucide-react";
 
 const features = [
   {
-    icon: <User className="w-10 h-10 sm:w-12 sm:h-12 text-white" />,
-    title: "Harvesting",
+    icon: <BadgeCheck className="w-10 h-10 sm:w-12 sm:h-12 text-white" />,
+    title: "Qualidade",
     red: false,
   },
   {
-    icon: <User className="w-10 h-10 sm:w-12 sm:h-12 text-white" />,
-    title: "Maintenance",
+    icon: <Forklift className="w-10 h-10 sm:w-12 sm:h-12 text-white" />,
+    title: "Eficiência",
     red: true,
   },
   {
-    icon: <User className="w-10 h-10 sm:w-12 sm:h-12 text-white" />,
-    title: "Fencing",
+    icon: <Handshake className="w-10 h-10 sm:w-12 sm:h-12 text-white" />,
+    title: "Dedicação",
     red: false,
   },
 ];
@@ -46,10 +46,11 @@ export function DifferenceSection() {
             O que nos diferencia
           </h2>
           <p className="text-gray-500 text-base sm:text-lg mb-4">
-            Lorem ipsum dolor sit amet nsectetur cing elit. Suspe ndsse suscipit sagittis leo sit met entum estibu dignissim posuere cubilia durae. Leo sit met entum cubilia crae onec.
+            Na Raça Distribuidora, nosso diferencial vai muito além de entregar produtos,
+            entregamos confiança, compromisso e parceria de verdade.          
           </p>
           <p className="text-gray-500 text-base sm:text-lg mb-8">
-            Lorem ipsum dolor sit amet adipiscing elit. Nulla placerat posuere dui. Pellentesque venenatis sem non lacus ac auctor.
+            Sempre atuando com uma logística ágil e cobertura regional eficaz.
           </p>
 
           {/* Cards */}

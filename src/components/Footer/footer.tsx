@@ -1,5 +1,5 @@
 import React from "react";
-import { Instagram, Facebook, Youtube, Linkedin } from "lucide-react";
+import { Instagram, Facebook, Linkedin } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -15,13 +15,13 @@ const Footer = () => {
         <div className="mb-12 grid grid-cols-1 gap-12 md:grid-cols-3">
           {/* Brand Section */}
           <div className="text-center md:text-left">
-            <div className="mb-4 flex items-center justify-center md:justify-start">
+            <div className="flex items-center justify-center md:justify-start">
               <Image
-                src="/img/logo.png" // Certifique-se de que essa imagem está no public/img
+                src="/img/logo_white.png" // Certifique-se de que essa imagem está no public/img
                 alt="Raça Distribuição"
-                width={160}
+                width={200}
                 height={40}
-                className="object-contain"
+                className="object-cover"
               />
             </div>
             <p className="leading-relaxed text-gray-300">

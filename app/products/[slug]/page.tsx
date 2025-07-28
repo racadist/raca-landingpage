@@ -3,7 +3,6 @@ import React from "react";
 import { motion } from "motion/react";
 import Image from "next/image";
 import { products } from "@/data/products"; 
-import { TopBar } from "@/components";
 import { Button } from "@/components/ui/button";
 import { ChevronDown } from "lucide-react";
 import { representantes } from "@/components/ProductSections/ContactSection/contactSection";
@@ -27,7 +26,6 @@ export default async function ProductPage({ params }: PageProps) {
 
   return (
     <div className="flex flex-col items-center w-full font-poppins">
-      <TopBar/>
         {/* Seção principal */}
         <div className="relative w-full flex flex-col items-center">
         <div className="absolute top-0 left-0 w-full mt-70 h-[320px] bg-[#0152A6] z-0" />

@@ -6,17 +6,17 @@ import { LeitesRegulares, LeitesEspeciais, Queijos } from "@/assets";
 const products = [
   {
     id: 1,
-    name: "Leites Regulares",
+    name: "Charque",
     image: LeitesRegulares,
   },
   {
     id: 2,
-    name: "Leites Especiais",
+    name: "Itambé",
     image: LeitesEspeciais,
   },
   {
     id: 3,
-    name: "Queijos",
+    name: "Sardinha",
     image: Queijos,
   },
 ];
@@ -25,7 +25,7 @@ export function SectionProducts() {
   const [hovered, setHovered] = useState<number | null>(null);
 
   return (
-    <div className="my-10 px-4">
+    <div className="my-10 px-2">
     <div
       className={`
         flex sm:gap-4 gap-0
@@ -39,7 +39,7 @@ export function SectionProducts() {
           key={product.id}
           className="
             relative flex-shrink-0 sm:flex-1
-            w-[230px] sm:max-h-[300px]
+            w-[230px] sm:max-h-[400px]
             cursor-pointer overflow-hidden transition-all duration-300 rounded-xl
             snap-center"
           onMouseEnter={() => setHovered(idx)}
