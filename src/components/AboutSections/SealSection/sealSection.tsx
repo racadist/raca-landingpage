@@ -22,10 +22,10 @@ export function SealSection() {
     <div className="w-full bg-[#F9FAFB] py-12 px-4">
       {/* Título */}
       <div className="text-center mb-14">
-        <p className="text-gray-500 text-xl sm:text-2xl mb-2 font-comic-neue">
+        <p className="text-gray-500 text-lg sm:text-2xl mb-2 font-poppins">
           Quem confia na gente
         </p>
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-gray-900 font-poppins">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-gray-900 font-gilroy">
           Selos de Confiança
         </h2>
       </div>
