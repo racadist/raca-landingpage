@@ -1,4 +1,4 @@
-import { ProdutosLaticinios } from "@/assets";
+import { ProdutosLaticinios, ProdutosCharque, ProdutosEnlatados } from "@/assets";
 
 
 export const categories = [
@@ -36,10 +36,10 @@ export const categories = [
         { name: "Requeijão Light", slug: "requeijao-light" },
         { name: "Leite em Pó Integral", slug: "leite-em-po-integral" },
         { name: "Leite em pó Integral Instantâneo", slug: "leite-em-po-integral-instantaneo" },
-        { name: "Leite em pó Desnatado Instantâneo", slug: "leite-em-po-desnatado-instantaneo" },
-        { name: "Leite em Poó Nolac Integral", slug: "leite-em-po-nolac" },
-        { name: "Leite em pó Integral Pouch", slug: "leite-em-po-pouch-integral" },
-        { name: "Leite em pó Instantâneo Pouch", slug: "leite-em-po-instantaneo-pouch" },
+        { name: "Leite em Pó Desnatado Instantâneo", slug: "leite-em-po-desnatado-instantaneo" },
+        { name: "Leite em Pó Nolac Integral", slug: "leite-em-po-nolac" },
+        { name: "Leite em Pó Integral Pouch", slug: "leite-em-po-pouch-integral" },
+        { name: "Leite em Pó Instantâneo Pouch", slug: "leite-em-po-instantaneo-pouch" },
         { name: "Leite Condensado Semidesnatado Nolac", slug: "leite-condensado-nolac" },
         { name: "Leite Condensado Semidesnatado", slug: "leite-condensado-semidesnatado" },
         { name: "Leite Condensado", slug: "leite-condensado" },
@@ -55,7 +55,7 @@ export const categories = [
     },
     {
       name: "Conservas",
-      image: ProdutosLaticinios,
+      image: ProdutosEnlatados,
       products: [
         { name: "Sardinha Cabo Verde em Óleo", slug: "sardinha-oleo" },
         { name: "Sardinha Cabo Verde em Molho de Tomate", slug: "sardinha-molhotomate" },
@@ -64,12 +64,12 @@ export const categories = [
         { name: "Kitut Salsicha Aperitivo", slug: "salsicha-aperitivo" },
         { name: "Kitut Salsicha", slug: "salsicha" },
         { name: "Kitut Fiambre Bovino/Frango", slug: "fiambre" },
-        { name: "Kitut Feijoada", slug: "feijoada" },
+        { name: "Kitut FeijProdutosLaticiniosoada", slug: "feijoada" },
       ],
     },
     {
       name: "Carnes Salgadas",
-      image: ProdutosLaticinios,
+      image: ProdutosCharque,
       products: [
         { name: "Charque Tradicional", slug: "charque-tradicional" },
       ],

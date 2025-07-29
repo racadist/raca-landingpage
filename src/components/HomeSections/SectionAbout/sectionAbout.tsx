@@ -10,18 +10,18 @@ export function SectionAbout() {
           <div className="relative w-full max-w-[400px] h-[400px] sm:h-[450px]">
             <div className="absolute top-8 right-28 sm:right-32 w-[240px] sm:w-[320px] h-[240px] sm:h-[320px] rounded-xl bg-[#19233A] z-0" />
             <Image
-              width={360}
+              width={550}
               height={360}
-              src="/img/mulher_itambe.png"
+              src="/img/pessoas_falando.png"
               alt="Mulher Bebendo Bebida Itambé"
-              className="absolute top-0 left-0 w-[250px] sm:w-[300px] md:w-[360px] h-auto rounded-xl object-cover z-10 shadow-lg"
+              className="absolute top-0 left-0 w-[500px] sm:w-[500px] md:w-[500px] h-auto rounded-xl z-10 shadow-lgr"
             />
             <Image
-              width={180}
-              height={180}
-              src="/img/homem_raça.png"
+              width={550}
+              height={300}
+              src="/img/productsItambeRaca.png"
               alt="Entregador"
-              className="absolute sm:bottom-[-90px] right-0 left-37 md:left-0 xl:-left-20 xl:right-80 w-[180px] sm:w-[220px] md:w-[260px] h-auto rounded-xl object-cover z-20 shadow-xl"
+              className="absolute bottom-[-30px] sm:bottom-[-40px] right-0 left-20 md:left-0 xl:-left-20 xl:right-80 w-[200px] sm:w-[320px] md:w-[460px] h-56 rounded-xl object-cover z-20 shadow-xl"
             />
           </div>
         </div>

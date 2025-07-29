@@ -33,10 +33,12 @@ export const HexagonImage: React.FC<HexagonCardProps> = ({ className = '' }) => 
           clipPath: 'square(25% 3%, 75% 3%, 100% 50%, 75% 97%, 25% 97%, 0% 50%)',
         }}
           >
-        <img 
-          src="/img/homem_raça.png"
+        <Image 
+          height={420}
+          width={420}
+          src="/img/diferencial.png"
           alt="Happy professional woman with laptop"
-          className="w-full h-full object-cover object-center"
+          className="w-full h-full object-center object-cover"
         />
           </div>
         </div>

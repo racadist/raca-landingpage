@@ -50,7 +50,8 @@ import {
   KitutFeijoada,
   KitutFiambre,
   KitutSalsichaAperitivo,
-  KitutSalsicha
+  KitutSalsicha, 
+  Charque
 } from "@/assets";
 import type { StaticImageData } from "next/image";
 
@@ -378,7 +379,7 @@ export interface Product {
       id: "charque-tradicional",
       name: "Charque Tradicional",
       description: "Carne salgada e desidratada",
-      image: KitutFeijoada,
+      image: Charque,
     }
   ];
   

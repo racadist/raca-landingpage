@@ -5,18 +5,22 @@ import Image from "next/image";
 import "react-multi-carousel/lib/styles.css";
 
 const segments = [
-  { name: "Organic Wheat", img: "/img/homem_raça.png", alt: "Organic Wheat" },
-  { name: "Agro", img: "/img/homem_raça.png", alt: "Agro" },
-  { name: "The Ferm", img: "/img/homem_raça.png", alt: "The Ferm" },
-  { name: "Natural Rices", img: "/img/homem_raça.png", alt: "Natural Rices" },
-  { name: "Agric", img: "/img/homem_raça.png", alt: "Agric" },
-  { name: "g", img: "/img/homem_raça.png", alt: "Agric" },
-  { name: "f", img: "/img/homem_raça.png", alt: "Agric" },
-  { name: "e", img: "/img/homem_raça.png", alt: "Agric" },
-  { name: "d", img: "/img/homem_raça.png", alt: "Agric" },
-  { name: "c", img: "/img/homem_raça.png", alt: "Agric" },
-  { name: "b", img: "/img/homem_raça.png", alt: "Agric" },
-  { name: "a", img: "/img/homem_raça.png", alt: "Agric" },
+  { name: "Atacabom", img: "/img/segments/atacabom.png", alt: "Atacabom" },
+  { name: "Bom Dia Supermercado 2", img: "/img/segments/bomdiasupermercado2.png", alt: "Bom Dia Supermercado 2" },
+  { name: "Atacarejo Mercadão", img: "/img/segments/atacarejomercadao.png", alt: "Atacarejo Mercadão" },
+  { name: "Atacarejo SM", img: "/img/segments/atacarejosm.png", alt: "Atacarejo SM" },
+  { name: "Bom Dia Supermercado", img: "/img/segments/bomdiasupermercado.png", alt: "Bom Dia Supermercado" },
+  { name: "Estrela do Ouro", img: "/img/segments/estrelasouro.png", alt: "Estrela do Ouro" },
+  { name: "Leve Mais", img: "/img/segments/levemais.png", alt: "Leve Mais" },
+  { name: "Mercadinho Cruz", img: "/img/segments/mercadinhocruz.png", alt: "Mercadinho Cruz" },
+  { name: "Mercadinho Muito Mais", img: "/img/segments/mercadinhomuitomais.png", alt: "Mercadinho Muito Mais" },
+  { name: "Mini Preço", img: "/img/segments/minipreco.png", alt: "Mini Preço" },
+  { name: "Nordestino Supermercados", img: "/img/segments/nordestinosupermecados.png", alt: "Nordestino Supermercados" },
+  { name: "Preço Baixo", img: "/img/segments/precobaixo.png", alt: "Preço Baixo" },
+  { name: "Super Kanela", img: "/img/segments/superkanela.png", alt: "Super Kanela" },
+  { name: "Supermercado Bia", img: "/img/segments/supermercadobia.png", alt: "Supermercado Bia" },
+  { name: "Supermercado Guararapes", img: "/img/segments/supermercadoguararapes.png", alt: "Supermercado Guararapes" },
+  { name: "Supermercado Santana", img: "/img/segments/supermercadosantana.png", alt: "Supermercado Santana" },
 ];
 
 // Configurações de responsividade
@@ -47,11 +51,11 @@ export function SegmentsSection() {
       </h2>
 
       <div className="px-4">
-        <Carousel
+      <Carousel
           responsive={responsive}
-          autoPlay={true}
+          autoPlay
           autoPlaySpeed={2000}
-          infinite={true}
+          infinite
           arrows={false}
           showDots={false}
           draggable={false}
@@ -60,15 +64,21 @@ export function SegmentsSection() {
           {segments.map((segment) => (
             <div
               key={segment.name}
-              className="flex mx-4"
+              className="flex mx-4 h-full min-h-12 rounded-lg justify-center items-center"
             >
-              <Image
-                width={200}
-                height={200}
-                src={segment.img}
-                alt={segment.alt}
-                draggable={false}
-              />
+              <div
+                className="relative"
+                style={{ height: "200px", width: "189px" }}
+              >
+                <Image
+                  src={segment.img}
+                  alt={segment.alt}
+                  fill
+                  className="object-contain select-none pointer-events-none"
+                  draggable={false}
+                  sizes="(max-width: 768px) 180px, 189px"
+                />
+              </div>
             </div>
           ))}
         </Carousel>

@@ -1,23 +1,23 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
-import { LeitesRegulares, LeitesEspeciais, Queijos } from "@/assets";
+import { Charque, ProdutosLeites, ProdutosEnlatados } from "@/assets";
 
 const products = [
   {
     id: 1,
     name: "Charque",
-    image: LeitesRegulares,
+    image: Charque,
   },
   {
     id: 2,
     name: "Itambé",
-    image: LeitesEspeciais,
+    image: ProdutosLeites,
   },
   {
     id: 3,
-    name: "Sardinha",
-    image: Queijos,
+    name: "Enlatados",
+    image: ProdutosEnlatados,
   },
 ];
 
@@ -25,7 +25,7 @@ export function SectionProducts() {
   const [hovered, setHovered] = useState<number | null>(null);
 
   return (
-    <div className="my-10 px-2">
+    <div className="my-10 px-6">
     <div
       className={`
         flex sm:gap-4 gap-0
@@ -40,7 +40,7 @@ export function SectionProducts() {
           className="
             relative flex-shrink-0 sm:flex-1
             w-[230px] sm:max-h-[400px]
-            cursor-pointer overflow-hidden transition-all duration-300 rounded-xl
+            cursor-pointer overflow-hidden transition-all duration-300
             snap-center"
           onMouseEnter={() => setHovered(idx)}
           onMouseLeave={() => setHovered(null)}
@@ -55,7 +55,7 @@ export function SectionProducts() {
             `}
           />
           <div className="absolute inset-0 bg-gray-400/30 flex flex-col px-4 sm:px-6">
-            <span className="text-xl sm:text-4xl font-poppins font-extrabold mb-6 sm:mb-8 mt-2 drop-shadow-lg text-left self-start">
+            <span className="text-xl sm:text-4xl font-gilroy font-extrabold mb-6 sm:mb-8 mt-4 drop-shadow-lg text-left self-start">
               {product.name}
             </span>
             <button className="px-6 py-2 sm:px-8 sm:py-3 bg-gray-500/80 text-white font-semibold font-poppins rounded transition hover:bg-[#BB1717] cursor-pointer self-start">

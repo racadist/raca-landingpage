@@ -1,4 +1,7 @@
-import ProdutosLaticinios from "@/assets/categories/Produtos-Laticinios.svg";
+import ProdutosLaticinios from "@/assets/categories/Produtos-Laticinios.png";
+import ProdutosCharque from "@/assets/categories/ProdutosCharque.png";
+import ProdutosEnlatados from "@/assets/categories/ProdutosEnlatados.png";
+import ProdutosSardinha from "@/assets/categories/Produtos-Sardinha.png";
 
 import LeiteNatural from "@/assets/products/leite-natural.png";
 import LeiteNoLacIntegral from "@/assets/products/leite-nolac-integral.png";
@@ -10,6 +13,7 @@ import QueijoMussarela from "@/assets/products/queijo-mussarela.png";
 import QueijoParmesao from "@/assets/products/queijo-parmesao.png";
 import QueijoPrato from "@/assets/products/queijo-prato.png";
 
+import ProdutosLeites from "@/assets/categories/Produtos-Leites.png";
 import LeiteIntegral from "@/assets/products/leite-integral.png";
 import LeiteSemidesnatado from "@/assets/products/leite-semi.png";
 import LeiteDesnatado from "@/assets/products/leite-desnatado.png";
@@ -64,6 +68,7 @@ import KitutFiambre from "@/assets/products/kitut-fiambre.png";
 import KitutSalsichaAperitivo from "@/assets/products/kitut-salsichaap.png";
 import KitutSalsicha from "@/assets/products/kitut-salsicha.png";
 
+import Charque from "@/assets/products/charque.png";
 
 export { 
     LeiteNatural,
@@ -88,6 +93,7 @@ export {
     RequeijaoCremoso,
     RequeijaoLight,
     RequeijaoNolac,
+    ProdutosLeites,
     LeiteEmPoIntegral,
     LeiteEmPoNolac,
     LeiteEmPoPouchIntegral,
@@ -99,7 +105,10 @@ export {
     BebidaVitamina,
     BebidaUHTChocolate,
     BebidaUHTVitamina,
-    ProdutosLaticinios, 
+    ProdutosLaticinios,
+    ProdutosCharque,
+    ProdutosEnlatados,
+    ProdutosSardinha,
     WheyChocolate,
     WheyMorango,
     WheyBaunilha,
@@ -120,5 +129,6 @@ export {
     KitutFeijoada,
     KitutFiambre,
     KitutSalsichaAperitivo,
-    KitutSalsicha
+    KitutSalsicha, 
+    Charque
 };
