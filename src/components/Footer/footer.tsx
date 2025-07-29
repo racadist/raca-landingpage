@@ -17,7 +17,7 @@ const Footer = () => {
           <div className="text-center md:text-left">
             <div className="flex items-center justify-center md:justify-start">
               <Image
-                src="/img/logo_white.png" // Certifique-se de que essa imagem está no public/img
+                src="/img/logo_white.png" 
                 alt="Raça Distribuição"
                 width={200}
                 height={40}
@@ -45,13 +45,17 @@ const Footer = () => {
                 <h4 className="mb-4 text-xl font-semibold text-white">Siga-nos</h4>
                 <div className="flex items-center justify-center space-x-4 md:justify-end">
                   <a
-                    href="#"
+                    href="https://www.instagram.com/racadistribuicao.pe/"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="group rounded-full bg-white/10 p-3 transition-colors duration-300 hover:bg-white/20"
                   >
                     <Instagram className="h-5 w-5 transition-transform group-hover:scale-110" />
                   </a>
                   <a
-                    href="#"
+                    href="https://www.facebook.com/people/Ra%C3%A7a-Distribui%C3%A7%C3%A3o/61577039849996/?locale=pt_BR"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="group rounded-full bg-white/10 p-3 transition-colors duration-300 hover:bg-white/20"
                    >
                     <Facebook className="h-5 w-5 transition-transform group-hover:scale-110" />

@@ -10,18 +10,18 @@ export const HexagonImage: React.FC<HexagonCardProps> = ({ className = '' }) => 
       <div className={`relative ${className}`}>
         {/* hexagon container */}
         <div className="relative w-[320px] h-[320px] sm:w-[420px] sm:h-[420px] mx-auto">
-          <div 
+          {/* <div 
         className="absolute inset-0 w-full h-full"
         style={{
           clipPath: 'polygon(25% 3%, 75% 3%, 100% 50%, 75% 97%, 25% 97%, 0% 50%)',
           background: '#0B1623',
         }}
-          />
+          /> */}
           
           <div 
-            className="absolute inset-4 sm:inset-8 w-[calc(100%-16px)] sm:w-[calc(100%-32px)] h-[calc(100%-16px)] sm:h-[calc(100%-32px)]"
+            className="absolute inset-4 sm:inset-8 w-[calc(100%-16px)] sm:w-[calc(100%-32px)] h-[calc(100%-16px)] sm:h-[calc(100%-32px)] mb-4"
             style={{
-          clipPath: 'polygon(25% 3%, 75% 3%, 100% 50%, 75% 97%, 25% 97%, 0% 50%)',
+          clipPath: 'square(25% 3%, 75% 3%, 100% 50%, 75% 97%, 25% 97%, 0% 50%)',
           background: '#BB1717',
         }}
           />
@@ -30,7 +30,7 @@ export const HexagonImage: React.FC<HexagonCardProps> = ({ className = '' }) => 
           <div 
         className="absolute inset-8 sm:inset-16 w-[calc(100%-32px)] sm:w-[calc(100%-100px)] h-[calc(100%-32px)] sm:h-[calc(100%-108px)] overflow-hidden"
         style={{
-          clipPath: 'polygon(25% 3%, 75% 3%, 100% 50%, 75% 97%, 25% 97%, 0% 50%)',
+          clipPath: 'square(25% 3%, 75% 3%, 100% 50%, 75% 97%, 25% 97%, 0% 50%)',
         }}
           >
         <img 
