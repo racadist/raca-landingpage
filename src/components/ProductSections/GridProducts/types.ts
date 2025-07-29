@@ -1,10 +1,10 @@
-import { ProdutosLaticinios, ProdutosCharque, ProdutosEnlatados } from "@/assets";
+import { ProdutosLeiteEmPo, ProdutosCharque, ProdutosEnlatados } from "@/assets";
 
 
 export const categories = [
     {
       name: "Laticínios",
-      image: ProdutosLaticinios,
+      image: ProdutosLeiteEmPo,
       products: [
         { name: "Leite NoLac Integral", slug: "leite-nolac-integral" },
         { name: "Leite NoLac Desnatado ", slug: "leite-nolac-desnatado" },

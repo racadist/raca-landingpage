@@ -28,6 +28,7 @@ import CremeDeLeite25 from "@/assets/products/cremeleite-25.png";
 
 import CreamCheese from "@/assets/products/cream-cheese.png";
 
+import ProdutosLeiteEmPo from "@/assets/categories/Produtos-LeitesEmPo.png";
 import LeiteEmPoIntegral from "@/assets/products/leite-po-integral.png";
 import LeiteEmPoNolac from "@/assets/products/leite-po-nolac.png";
 import LeiteEmPoPouchIntegral from "@/assets/products/leite-po-pouch-integral.png";
@@ -109,6 +110,7 @@ export {
     ProdutosCharque,
     ProdutosEnlatados,
     ProdutosSardinha,
+    ProdutosLeiteEmPo,
     WheyChocolate,
     WheyMorango,
     WheyBaunilha,

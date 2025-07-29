@@ -19,9 +19,9 @@ export function GridProducts() {
               <Image
                 src={categories[0].image}
                 alt={categories[0].name}
-                width={800}
-                height={400}
-                className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300"
+                width={500}
+                height={200}
+                className="h-80 w-full group-hover:scale-105 transition-transform duration-300 object-cover"
               />
               <div className="absolute inset-0 bg-gray-400/30 transition-opacity duration-300 group-hover:opacity-75" />
               <div className="absolute bottom-0 left-0 w-full px-5 py-3 bg-gradient-to-t from-black/80 to-transparent">

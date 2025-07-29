@@ -1,3 +1,4 @@
+"use client";
 import { SegmentsSection, ContactMapSection, GridProducts } from "@/components";
 
 export default function Products() {

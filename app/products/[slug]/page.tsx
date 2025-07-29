@@ -48,48 +48,47 @@ export default async function ProductPage({ params }: PageProps) {
       </div>
 
       {/* Mapa */}
-        <h2 className="text-3xl sm:text-4xl font-extrabold text-center text-[#0B1A2A] font-poppins mb-6 sm:mb-0">
+        <h2 className="text-3xl sm:text-4xl font-extrabold text-center text-[#0B1A2A] font-gilroy mb-6 sm:mb-0">
           Entre em contato com nossos representantes
         </h2>
-      <section className="relative px-4 bg-[#0152A6] w-full">
-
-      <div className="flex flex-col lg:flex-row gap-10 max-w-6xl mx-auto items-center">
-          <div className="w-full lg:w-1/2 flex justify-center">
-            <Image
-              src="/img/mapa_pernambuco_cinza.png" 
-              alt="Mapa de Pernambuco"
-              width={500}
-              height={350}
-              className="object-contain"
-            />
+      <section className="relative px-4 bg-[#0152A6] w-full p-6">
+        <div className="flex flex-col lg:flex-row gap-10 max-w-6xl mx-auto items-center">
+            <div className="w-full lg:w-1/2 flex justify-center">
+              <Image
+                src="/img/mapa_pernambuco.png" 
+                alt="Mapa de Pernambuco"
+                width={500}
+                height={350}
+                className="object-contain"
+              />
+            </div>
+    
+            {/* Lista de representantes */}
+            <div className="w-full lg:w-1/2 grid grid-cols-1 sm:grid-cols-2 gap-6">
+              {representantes.map((rep, index) => (
+                <motion.div
+                  key={rep.nome}
+                  initial={{ opacity: 0, y: 40 }}
+                  animate={{ opacity: 2, y: 0 }}
+                  transition={{ delay: 0.6 * index, duration: 0.5 }}
+                  className="bg-white shadow p-5 hover:shadow-lg transition"
+                >
+                  <h3 className="text-xl font-semibold text-[#bb1717]">
+              {rep.nome}
+                  </h3>
+                  <p className="text-sm text-gray-600 mt-1">{rep.regiao}</p>
+                  <p className="text-sm text-gray-600 mt-1">📍 {rep.cidade}</p>
+                  <a
+                    href={`https://wa.me/${rep.whatsapp}`}
+                    target="_blank"
+                    className="inline-block mt-4 bg-[#26294D] text-white px-4 py-2 rounded-full text-sm hover:bg-[#bb1717] transition"
+                        >
+                        Entrar em contato
+                  </a>
+                </motion.div>
+              ))}
+            </div>
           </div>
-  
-          {/* Lista de representantes */}
-          <div className="w-full lg:w-1/2 grid grid-cols-1 sm:grid-cols-2 gap-6">
-            {representantes.map((rep, index) => (
-              <motion.div
-                key={rep.nome}
-                initial={{ opacity: 0, y: 40 }}
-                animate={{ opacity: 2, y: 0 }}
-                transition={{ delay: 0.6 * index, duration: 0.5 }}
-                className="bg-white rounded-xl shadow p-5 hover:shadow-lg transition"
-              >
-                <h3 className="text-xl font-semibold text-[#bb1717]">
-            {rep.nome}
-                </h3>
-                <p className="text-sm text-gray-600 mt-1">{rep.regiao}</p>
-                <p className="text-sm text-gray-600 mt-1">📍 {rep.cidade}</p>
-                <a
-                  href={`https://wa.me/${rep.whatsapp}`}
-                  target="_blank"
-                  className="inline-block mt-4 bg-[#26294D] text-white px-4 py-2 rounded-full text-sm hover:bg-[#bb1717] transition"
-                      >
-                      Entrar em contato
-                </a>
-              </motion.div>
-            ))}
-          </div>
-        </div>
       </section>
     </div>
   );
