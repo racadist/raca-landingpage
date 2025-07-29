@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
-import Image from "next/image";
-import { User, Forklift, Handshake, BadgeCheck } from "lucide-react";
+import { Forklift, Handshake, BadgeCheck } from "lucide-react";
 import { motion } from "motion/react";
 import { HexagonImage } from "@/components/HexagonImage/hexagonImage";
 
