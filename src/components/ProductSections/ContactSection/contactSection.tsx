@@ -6,16 +6,14 @@ import { useRef } from "react";
 
 export const representantes = [
   {
-    nome: "Maria Oliveira",
-    cidade: "Recife",
+    nome: "Josinaldo Correia",
     regiao: "Região Metropolitana",
-    whatsapp: "5581999999999",
+    whatsapp: "55819993235217",
   },
   {
-    nome: "João Silva",
-    cidade: "Caruaru",
-    regiao: "Agreste",
-    whatsapp: "5581988888888",
+    nome: "Adair Neto",
+    regiao: "Interior do Estado",
+    whatsapp: "55819993235218",
   },
 ];
 
@@ -26,7 +24,7 @@ export function ContactMapSection() {
   return (
     <section
       ref={sectionRef}
-      className="w-full px-4 py-12 bg-[#F9FAFB] font-gilroy"
+      className="w-full px-4 py-24 bg-[#F9FAFB] font-gilroy"
     >
       <h2 className="text-center text-2xl md:text-4xl font-bold mb-10 text-[#223872]">
         Entre em contato com nossos representantes
@@ -57,8 +55,7 @@ export function ContactMapSection() {
               <h3 className="text-xl font-extrabold text-white">
                 {rep.nome}
               </h3>
-              <p className="text-sm text-white mt-1">{rep.regiao}</p>
-              <p className="text-sm text-white mt-1">📍 {rep.cidade}</p>
+              <p className="text-sm text-white mt-1">📍 {rep.regiao}</p>
               <a
                 href={`https://wa.me/${rep.whatsapp}`}
                 target="_blank"

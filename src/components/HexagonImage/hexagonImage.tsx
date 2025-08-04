@@ -8,7 +8,7 @@ interface HexagonCardProps {
 export const HexagonImage: React.FC<HexagonCardProps> = ({ className = '' }) => {
     return (
       <div className={`relative ${className}`}>
-        <div className="relative w-[320px] h-[320px] sm:w-[420px] sm:h-[420px] mx-auto -ml-8">
+        <div className="relative w-[320px] h-[320px] sm:w-[420px] sm:h-[420px] mx-auto -ml-8 -mt-8">
           <div 
             className="absolute inset-4 sm:inset-8 w-[calc(100%-16px)] sm:w-[calc(100%-32px)] h-[calc(100%-16px)] sm:h-[calc(100%-32px)] mb-4"
             style={{

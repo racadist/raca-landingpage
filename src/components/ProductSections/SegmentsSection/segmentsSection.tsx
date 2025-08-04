@@ -45,10 +45,7 @@ const responsive = {
 
 export function SegmentsSection() {
   return (
-    <section className="bg-[#fafcff] py-12 text-center">
-      <h2 className="text-3xl md:text-4xl font-semibold font-gilroy text-[#223872] mb-10">
-        Nossos Clientes
-      </h2>
+    <section className="py-24 text-center ">
 
       <div className="px-4">
       <Carousel
@@ -68,7 +65,7 @@ export function SegmentsSection() {
             >
               <div
                 className="relative"
-                style={{ height: "200px", width: "189px" }}
+                style={{ height: "200px", width: "200px" }}
               >
                 <Image
                   src={segment.img}
@@ -76,7 +73,7 @@ export function SegmentsSection() {
                   fill
                   className="object-contain select-none pointer-events-none"
                   draggable={false}
-                  sizes="(max-width: 768px) 180px, 189px"
+                  sizes="(max-width: 868px) 280px, 289px"
                 />
               </div>
             </div>
