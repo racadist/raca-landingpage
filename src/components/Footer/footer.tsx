@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="relative overflow-hidden bg-[#26294D] p-6 text-white font-poppins">
+    <footer className="relative overflow-hidden bg-[#223872] p-6 text-white font-poppins">
       {/* Background decoration (opcional) */}
       <div className="absolute inset-0 opacity-10 pointer-events-none">
         <div className="h-full w-full bg-grid-white/[0.05]" />
@@ -25,23 +25,22 @@ const Footer = () => {
               />
             </div>
             <p className="leading-relaxed text-gray-300">
-              Desde 1992 atuando com excelência na distribuição de alimentos,
-              conectando marcas e clientes por toda Pernambuco.
+            Desde 1992, unindo excelência em distribuição de alimentos com eficiência
+            logística em todo Pernambuco.
             </p>
           </div>
 
           {/* Contact Section */}
-          <div className="text-center">
+          <div className="text-center mt-8">
             <h4 className="mb-4 text-xl font-semibold text-white">Contato</h4>
             <div className="space-y-2 text-gray-300">
-              <p>contato@racadistribuicao.com.br</p>
+              <p>racadist@racadist.com</p>
               <p>(81) 99999-9999</p>
-              <p>📍 Recife, PE</p>
             </div>
           </div>
 
           {/* Social Media Section */}
-          <div className="text-center md:text-right">
+          <div className="text-center md:text-right mt-6">
                 <h4 className="mb-4 text-xl font-semibold text-white">Siga-nos</h4>
                 <div className="flex items-center justify-center space-x-4 md:justify-end">
                   <a

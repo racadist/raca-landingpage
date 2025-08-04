@@ -28,7 +28,7 @@ export function ContactMapSection() {
       ref={sectionRef}
       className="w-full px-4 py-12 bg-[#F9FAFB] font-gilroy"
     >
-      <h2 className="text-center text-2xl md:text-4xl font-bold mb-10 text-[#26294D]">
+      <h2 className="text-center text-2xl md:text-4xl font-bold mb-10 text-[#223872]">
         Entre em contato com nossos representantes
       </h2>
 
@@ -52,7 +52,7 @@ export function ContactMapSection() {
               initial={{ opacity: 0, y: 40 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ delay: 0.3 * index, duration: 0.6 }}
-              className="bg-[#26294D] shadow p-5 hover:shadow-lg transition"
+              className="bg-[#223872] shadow p-5 hover:shadow-lg transition"
             >
               <h3 className="text-xl font-extrabold text-white">
                 {rep.nome}

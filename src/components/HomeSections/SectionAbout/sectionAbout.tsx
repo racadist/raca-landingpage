@@ -29,29 +29,29 @@ export function SectionAbout() {
           <h3 className="text-xl sm:text-2xl md:text-3xl font-medium font-poppins text-muted-foreground">
             Conheça um pouco sobre a gente
           </h3>
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#0B1A2A] font-gilroy mt-2">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#223872] font-gilroy mt-2">
             A única distribuidora Itambé de PE
           </h1>
           <p className="text-base sm:text-lg max-w-2xl text-[#BB1717] font-gilroy mt-6">
             Distribuição com qualidade e confiança, é assim que se faz.
           </p>
-          <p className="text-base sm:text-lg max-w-2xl text-muted-foreground font-gilroy mt-4">
+          <p className="text-base sm:text-lg max-w-2xl text-muted-foreground font-semibold font-poppins mt-4">
             Com mais de 30 anos de história, a Raça Distribuidora é referência no fornecimento de
             alimentos para supermercados, padarias, food service e outros negócios. Somos o
             distribuidor oficial da Itambé em Pernambuco, sempre prezando por logística eficiente,
             atendimento próximo e um compromisso inegociável com a qualidade.
           </p>
-          <div className="mt-6 space-y-4 font-semibold font-gilroy text-base sm:text-lg">
+          <div className="mt-6 space-y-4 font-semibold font-gilroy text-base sm:text-lg text-[#223872]">
             <div className="flex items-center space-x-2">
-              <Check className="text-[#24306B]" />
+              <Check />
               <span>Priorizamos o relacionamento próximo com cada cliente</span>
             </div>
             <div className="flex items-center space-x-2">
-              <Check className="text-[#24306B]" />
+              <Check />
               <span>Entregamos qualidade, pontualidade e preço competitivo</span>
             </div>
             <div className="flex items-center space-x-2">
-              <Check className="text-[#24306B]" />
+              <Check />
               <span>Para nós, parceria não se mede em volume, mas em confiança.</span>
             </div>
           </div>

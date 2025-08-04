@@ -2,6 +2,7 @@ import ProdutosLaticinios from "@/assets/categories/Produtos-Laticinios.png";
 import ProdutosCharque from "@/assets/categories/ProdutosCharque.png";
 import ProdutosEnlatados from "@/assets/categories/ProdutosEnlatados.png";
 import ProdutosSardinha from "@/assets/categories/Produtos-Sardinha.png";
+import ProdutosLeitesRegulares from "@/assets/categories/Produtos-LeitesRegulares.png";
 
 import LeiteNatural from "@/assets/products/leite-natural.png";
 import LeiteNoLacIntegral from "@/assets/products/leite-nolac-integral.png";
@@ -76,6 +77,7 @@ export {
     LeiteNoLacIntegral,
     LeiteNoLacDesnatado,
     LeiteNoLacSemidesnatado,
+    ProdutosLeitesRegulares,
     Queijos,
     QueijoMussarela,
     QueijoPrato,

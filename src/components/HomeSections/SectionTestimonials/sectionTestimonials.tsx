@@ -11,7 +11,7 @@ export function SectionTestimonials() {
 
   return (
     <div className="bg-[#F9FAFB] py-8 px-2 sm:py-14 sm:px-6 md:px-12">
-      <h1 className="text-xl sm:text-3xl md:text-5xl font-extrabold text-center py-4 sm:py-8 font-gilroy text-[#0B1A2A] mb-6 sm:mb-9">
+      <h1 className="text-xl sm:text-3xl md:text-5xl font-extrabold text-center py-4 sm:py-8 font-gilroy text-[#223872] mb-6 sm:mb-9">
         Veja o que nossos clientes falam da gente
       </h1>
 
