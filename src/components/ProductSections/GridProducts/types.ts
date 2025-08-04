@@ -1,28 +1,32 @@
-import { ProdutosLeiteEmPo, ProdutosCharque, ProdutosEnlatados, ProdutosLeitesRegulares } from "@/assets";
+import {
+  ProdutosLeiteEmPo,
+  ProdutosCharque,
+  ProdutosEnlatados,
+  ProdutosLeitesRegulares,
+  ProdutosBebidasLacteas, 
+  ProdutosLeiteCondensadoCremeLeite,
+  ProdutosLeites, 
+  Queijos, 
+  ProdutosRequeijao, 
+  ProdutosWhey, 
+  ProdutosDoceLeite
+} from "@/assets";
 
 
 export const categories = [
   {
-    name: "Laticínios",
-    image: ProdutosLeiteEmPo,
+    name: "Leites Especiais",
+    image: ProdutosLeites,
     products: [
       { name: "Leite NoLac Integral", slug: "leite-nolac-integral" },
       { name: "Leite NoLac Desnatado ", slug: "leite-nolac-desnatado" },
       { name: "Leite NoLac Semidesnatado", slug: "leite-nolac-semidesnatado" },
       { name: "Leite Integral Natural", slug: "leite-natural" },
-      { name: "Leite UAT Integral", slug: "leite-integral" },
-      { name: "Leite UAT Semidesnatado", slug: "leite-semidesnatado" },
-      { name: "Leite UAT Desnatado", slug: "leite-desnatado" },
-      { name: "Doce de Leite Tradicional", slug: "doce-de-leite" },
-      { name: "Doce de Leite Pastoso", slug: "doce-de-leite-pastoso" },
-      { name: "Doce de Leite Tradicional BAG", slug: "doce-de-leite-bag" },
-      { name: "Manteiga com Sal", slug: "manteiga-com-sal" },
-      { name: "Manteiga sem Sal", slug: "manteiga-sem-sal" },
     ],
   },
   {
     name: "Bebida Láctea",
-    image: ProdutosLeitesRegulares,
+    image: ProdutosBebidasLacteas,
     products: [
       { name: "Bebida Láctea Kids Chocolate", slug: "bebida-chocolate" },
       { name: "Bebida Láctea Kids Morango", slug: "bebida-morango" },
@@ -33,8 +37,42 @@ export const categories = [
     ],
   },
   {
-    name: "Requeijão",
+    name: "Whey",
+    image: ProdutosWhey,
+    products: [
+      { name: "Bebida Láctea Whey Morango", slug: "bebida-whey-morango" },
+      { name: "Bebida Láctea Whey Baunilha", slug: "bebida-whey-baunilha" },
+      { name: "Bebida Láctea Whey Coco com Batata", slug: "bebida-whey-coco" },
+      { name: "Bebida Láctea Whey Chocolate", slug: "bebida-whey-chocolate" },
+      { name: "Bebida Láctea Whey Capuccino", slug: "bebida-whey-Capuccino" },
+      { name: "Whey Protein em Pó Baunilha", slug: "whey-protein-baunilha"},
+      { name: "Whey Protein em Pó Chocolate", slug: "whey-protein-chocolate" },
+      { name: "Whey Protein em Pó Morango", slug: "whey-protein-morango" },
+    ],
+  },
+  {
+    name: "Doce de Leite",
+    image: ProdutosDoceLeite,
+    products: [
+      { name: "Doce de Leite Tradicional", slug: "doce-de-leite" },
+      { name: "Doce de Leite Pastoso", slug: "doce-de-leite-pastoso" },
+      { name: "Doce de Leite Tradicional BAG", slug: "doce-de-leite-bag" },
+      { name: "Manteiga com Sal", slug: "manteiga-com-sal" },
+      { name: "Manteiga sem Sal", slug: "manteiga-sem-sal" },
+    ],
+  },
+  {
+    name: "Leites Regulares",
     image: ProdutosLeitesRegulares,
+    products: [
+      { name: "Leite UAT Integral", slug: "leite-integral" },
+      { name: "Leite UAT Semidesnatado", slug: "leite-semidesnatado" },
+      { name: "Leite UAT Desnatado", slug: "leite-desnatado" }
+    ]
+  },
+  {
+    name: "Requeijão",
+    image: ProdutosRequeijao,
     products: [
       { name: "Requeijão Tradicional", slug: "requeijao-cremoso" },
       { name: "Requeijão Nolac", slug: "requeijao-nolac" },
@@ -55,7 +93,7 @@ export const categories = [
   },
   {
     name: "Leite Condensado & Creme de Leite",
-    image: ProdutosLeiteEmPo,
+    image: ProdutosLeiteCondensadoCremeLeite,
     products: [
       { name: "Leite Condensado Semidesnatado Nolac", slug: "leite-condensado-nolac" },
       { name: "Leite Condensado Semidesnatado", slug: "leite-condensado-semidesnatado" },
@@ -67,25 +105,11 @@ export const categories = [
   },
   {
     name: "Queijos",
-    image: ProdutosLeiteEmPo,
+    image: Queijos,
     products: [
       { name: "Queijo Prato Fatiado", slug: "queijo-prato" },
       { name: "Queijo Mussarela Fatiado", slug: "queijo-mussarela" },
       { name: "Queijo Parmesão Ralado", slug: "queijo-parmesao" },
-    ],
-  },
-  {
-    name: "Whey",
-    image: ProdutosLeiteEmPo,
-    products: [
-      { name: "Bebida Láctea Whey Morango", slug: "bebida-whey-morango" },
-      { name: "Bebida Láctea Whey Baunilha", slug: "bebida-whey-baunilha" },
-      { name: "Bebida Láctea Whey Coco com Batata", slug: "bebida-whey-coco" },
-      { name: "Bebida Láctea Whey Chocolate", slug: "bebida-whey-chocolate" },
-      { name: "Bebida Láctea Whey Capuccino", slug: "bebida-whey-Capuccino" },
-      { name: "Whey Protein em Pó Baunilha", slug: "whey-protein-baunilha"},
-      { name: "Whey Protein em Pó Chocolate", slug: "whey-protein-chocolate" },
-      { name: "Whey Protein em Pó Morango", slug: "whey-protein-morango" },
     ],
   },
   {

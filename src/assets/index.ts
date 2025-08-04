@@ -19,6 +19,7 @@ import LeiteIntegral from "@/assets/products/leite-integral.png";
 import LeiteSemidesnatado from "@/assets/products/leite-semi.png";
 import LeiteDesnatado from "@/assets/products/leite-desnatado.png";
 
+import ProdutosLeiteCondensadoCremeLeite from "@/assets/categories/Produtos-LeiteCondensadoCremedeLeite.png";
 import LeiteCondensadoIntegral from "@/assets/products/leitecondensado-integral.png";
 import CremeDeLeite from "@/assets/products/cremeleite.png";
 import LeiteCondensadoNolac from "@/assets/products/leitecondensado-nolac.png";
@@ -37,10 +38,12 @@ import LeiteEmPoPouchInstantaneo from "@/assets/products/leite-po-pouch-inst.png
 import LeiteEmPoDesnatadoInstantaneo from "@/assets/products/leite-po-desnatado-inst.png";
 import LeiteEmPoIntegralInstantaneo from "@/assets/products/leite-po-integral-inst.png";
 
+import ProdutosRequeijao from "@/assets/categories/Produtos-Requeijao.png";
 import RequeijaoCremoso from "@/assets/products/requeijao-cremoso.png";
 import RequeijaoLight from "@/assets/products/requeijao-light.png";
 import RequeijaoNolac from "@/assets/products/requeijao-nolac.png";
 
+import ProdutosWhey from "@/assets/categories/Produtos-Whey.png";
 import WheyChocolate from "@/assets/products/bebida-lactea-chocolate.png";
 import WheyMorango from "@/assets/products/bebida-lactea-morango.png";
 import WheyBaunilha from "@/assets/products/bebida-lactea-baunilha.png";
@@ -49,15 +52,19 @@ import WheyCapuccino from "@/assets/products/bebida-lactea-capuccino.png";
 import WheyProteinBaunilha from "@/assets/products/whey-baunilha.png";
 import WheyProteinChocolate from "@/assets/products/whey-chocolate.png";
 import WheyProteinMorango from "@/assets/products/whey-morango.png";
+
+import ProdutosBebidasLacteas from "@/assets/categories/Produtos-BebidasLacteas.png";
 import BebidaChocolate from "@/assets/products/bebida-chocolate.png";
 import BebidaMorango from "@/assets/products/bebida-morango.png";
 import BebidaVitamina from "@/assets/products/bebida-vitamina.png";
 import BebidaUHTChocolate from "@/assets/products/bebida-uht-chocolate.png";
 import BebidaUHTVitamina from "@/assets/products/bebida-uht-vitamina.png";
 
+import ProdutosDoceLeite from "@/assets/categories/Produtos-DoceLeite.png";
 import DoceDeLeiteTradicional from "@/assets/products/doce-leite.png";
 import DoceDeLeitePastoso from "@/assets/products/doce-leite-pastoso.png";
 import DoceDeLeiteBag from "@/assets/products/doce-leite-bag.png";
+
 import ManteigaComSal from "@/assets/products/manteiga-sal.png";
 import ManteigaSemSal from "@/assets/products/manteiga-ssal.png";
 import SardinhaOleo from "@/assets/products/sardinha-oleo.png";
@@ -134,5 +141,10 @@ export {
     KitutFiambre,
     KitutSalsichaAperitivo,
     KitutSalsicha, 
-    Charque
+    Charque,
+    ProdutosBebidasLacteas, 
+    ProdutosLeiteCondensadoCremeLeite, 
+    ProdutosRequeijao, 
+    ProdutosWhey, 
+    ProdutosDoceLeite
 };

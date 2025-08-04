@@ -76,8 +76,7 @@ export default async function ProductPage({ params }: PageProps) {
               <h3 className="text-xl font-extrabold text-white">
                 {rep.nome}
               </h3>
-              <p className="text-sm text-white mt-1">{rep.regiao}</p>
-              <p className="text-sm text-white mt-1">📍 {rep.cidade}</p>
+              <p className="text-sm text-white mt-1">📍 {rep.regiao}</p>
               <a
                 href={`https://wa.me/${rep.whatsapp}`}
                 target="_blank"

@@ -1,7 +1,8 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
-import { Charque, ProdutosLeites, ProdutosEnlatados } from "@/assets";
+import { Charque, ProdutosLeites, ProdutosEnlatados, ProdutosLaticinios } from "@/assets";
+import { useRouter } from "next/navigation";
 
 const products = [
   {
@@ -12,7 +13,7 @@ const products = [
   {
     id: 2,
     name: "Itambé",
-    image: ProdutosLeites,
+    image: ProdutosLaticinios,
   },
   {
     id: 3,
@@ -20,9 +21,9 @@ const products = [
     image: ProdutosEnlatados,
   },
 ];
-
 export function SectionProducts() {
   const [hovered, setHovered] = useState<number | null>(null);
+  const router = useRouter();
 
   return (
     <div className="my-10 px-6">
@@ -55,10 +56,13 @@ export function SectionProducts() {
             `}
           />
           <div className="absolute inset-0  flex flex-col px-4 sm:px-6">
-            <span className="text-xl sm:text-4xl font-gilroy font-extrabold text-[#223872] mb-6 sm:mb-8 mt-4 drop-shadow-lg text-left self-start">
+            <span className="text-xl sm:text-4xl font-gilroy font-extrabold text-[#223872] mb-6 sm:mb-4 mt-4 drop-shadow-lg text-left self-start">
               {product.name}
             </span>
-            <button className="px-6 py-2 sm:px-8 sm:py-3 bg-[#223872] text-white font-semibold font-poppins rounded transition hover:bg-[#BB1717] cursor-pointer self-start">
+            <button
+              onClick={() => router.push("/products")}
+              className="px-4 py-2 sm:px-4 sm:py-3 bg-[#223872] text-white font-semibold font-poppins rounded transition hover:bg-[#BB1717] cursor-pointer self-start"
+            >
               Veja mais
             </button>
           </div>
