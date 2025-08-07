@@ -15,6 +15,7 @@ import QueijoParmesao from "@/assets/products/queijo-parmesao.png";
 import QueijoPrato from "@/assets/products/queijo-prato.png";
 
 import ProdutosLeites from "@/assets/categories/Produtos-Leites.png";
+import CompostoLacteo from "@/assets/products/composto-lacteo.png";
 import LeiteIntegral from "@/assets/products/leite-integral.png";
 import LeiteSemidesnatado from "@/assets/products/leite-semi.png";
 import LeiteDesnatado from "@/assets/products/leite-desnatado.png";
@@ -65,6 +66,7 @@ import DoceDeLeiteTradicional from "@/assets/products/doce-leite.png";
 import DoceDeLeitePastoso from "@/assets/products/doce-leite-pastoso.png";
 import DoceDeLeiteBag from "@/assets/products/doce-leite-bag.png";
 
+import ProdutosManteiga from "@/assets/categories/Produtos-Manteiga.png";
 import ManteigaComSal from "@/assets/products/manteiga-sal.png";
 import ManteigaSemSal from "@/assets/products/manteiga-ssal.png";
 import SardinhaOleo from "@/assets/products/sardinha-oleo.png";
@@ -146,5 +148,7 @@ export {
     ProdutosLeiteCondensadoCremeLeite, 
     ProdutosRequeijao, 
     ProdutosWhey, 
-    ProdutosDoceLeite
+    ProdutosDoceLeite, 
+    ProdutosManteiga, 
+    CompostoLacteo
 };

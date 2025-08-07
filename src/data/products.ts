@@ -51,7 +51,8 @@ import {
   KitutFiambre,
   KitutSalsichaAperitivo,
   KitutSalsicha, 
-  Charque
+  Charque, 
+  CompostoLacteo
 } from "@/assets";
 import type { StaticImageData } from "next/image";
 
@@ -242,6 +243,12 @@ export interface Product {
       name: "Leite em pó Desnatado Instantâneo",
       description: "Leite em pó desnatado instantâneo",
       image: LeiteEmPoDesnatadoInstantaneo,
+    },
+    {
+      id: "composto-lacteo",
+      name: "Composto Lácteo",
+      description: "Composto lácteo para uso culinário",
+      image: CompostoLacteo,
     },
     {
       id: "leite-em-po-nolac",

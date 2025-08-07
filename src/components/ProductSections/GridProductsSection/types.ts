@@ -9,7 +9,8 @@ import {
   Queijos, 
   ProdutosRequeijao, 
   ProdutosWhey, 
-  ProdutosDoceLeite
+  ProdutosDoceLeite, 
+  ProdutosManteiga
 } from "@/assets";
 
 
@@ -71,16 +72,17 @@ export const categories = [
     ]
   },
   {
-    name: "Requeijão",
+    name: "Requeijão & Cream Cheese",
     image: ProdutosRequeijao,
     products: [
       { name: "Requeijão Tradicional", slug: "requeijao-cremoso" },
       { name: "Requeijão Nolac", slug: "requeijao-nolac" },
       { name: "Requeijão Light", slug: "requeijao-light" },
+      { name: "Cream Cheese Tradicional", slug: "cream-cheese" },
     ],
   },
   {
-    name: "Leite em Pó",
+    name: "Leite em Pó & Composto Lácteo",
     image: ProdutosLeiteEmPo,
     products: [
       { name: "Leite em Pó Integral", slug: "leite-em-po-integral" },
@@ -89,6 +91,7 @@ export const categories = [
       { name: "Leite em Pó Nolac Integral", slug: "leite-em-po-nolac" },
       { name: "Leite em Pó Integral Pouch", slug: "leite-em-po-pouch-integral" },
       { name: "Leite em Pó Instantâneo Pouch", slug: "leite-em-po-instantaneo-pouch" },
+      { name: "Composto Lácteo", slug: "composto-lacteo" },
     ],
   },
   {
@@ -110,6 +113,14 @@ export const categories = [
       { name: "Queijo Prato Fatiado", slug: "queijo-prato" },
       { name: "Queijo Mussarela Fatiado", slug: "queijo-mussarela" },
       { name: "Queijo Parmesão Ralado", slug: "queijo-parmesao" },
+    ],
+  },
+  {
+    name: "Manteiga",
+    image: ProdutosManteiga,
+    products: [
+      { name: "Manteiga com Sal", slug: "manteiga-com-sal" },
+      { name: "Manteiga sem Sal", slug: "manteiga-sem-sal" },
     ],
   },
   {
