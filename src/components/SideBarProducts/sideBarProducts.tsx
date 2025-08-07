@@ -30,11 +30,11 @@ export const SidebarProducts = ({
   return (
    <div
       className={`transition-all duration-300 flex h-screen ${
-        open ? "w-[600px]" : "w-0"
+        open ? "w-[400px] md:w-[600px] md:mt-26" : "w-0"
       } bg-white text-[#26294D] overflow-hidden`}
     >
       {/* Coluna das categorias */}
-      <div className="w-1/2 border-r border-white/10 py-10 px-6 font-poppins">
+      <div className="w-1/2 border-r border-white/10 md:px-6 font-poppins">
         <h2 className="text-xl font-bold mb-4 mt-6">Categorias</h2>
         <ul className="space-y-3">
           {categories.map((cat) => (
@@ -53,7 +53,7 @@ export const SidebarProducts = ({
 
     {/* Coluna dos produtos */}
     {hoveredCategory && (
-      <div className="w-1/2 py-10 px-6">
+      <div className="w-1/3 md:w-1/2 md:px-6">
         <h2 className="text-xl font-bold mb-4 mt-6 font-poppins">Produtos</h2>
         {categories.map(
         (cat) =>

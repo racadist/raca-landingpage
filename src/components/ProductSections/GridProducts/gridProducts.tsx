@@ -2,7 +2,6 @@
 
 import { Button } from "@/components/ui/button";
 import React, { useState } from "react";
-import Link from "next/link";
 import Image from "next/image";
 import { categories } from "./types";
 import { Sheet, SheetContent } from "@/components/ui/sheet";
@@ -17,7 +16,7 @@ export function GridProducts() {
 
   const visibleCategories = showAll ? categories : categories.slice(0, INITIAL_VISIBLE);
 
-  const handleViewMore = (categoryName: string, idx: number) => {
+  const handleViewMore = (categoryName: string) => {
     setSelectedCategory(categoryName);
     setIsSidebarOpen(true);
   };
@@ -50,7 +49,7 @@ export function GridProducts() {
 
                   <div className="absolute top-4 right-4 z-20">
                     <Button
-                      onClick={() => handleViewMore(cat.name, realIdx)}
+                      onClick={() => handleViewMore(cat.name)}
                       className="bg-[#223872] text-sm font-semibold font-poppins text-white px-4 py-1 rounded-full shadow hover:bg-[#26294D] transition cursor-pointer"
                     >
                       Ver mais

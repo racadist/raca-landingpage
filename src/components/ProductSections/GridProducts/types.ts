@@ -123,7 +123,7 @@ export const categories = [
       { name: "Kitut Salsicha Aperitivo", slug: "salsicha-aperitivo" },
       { name: "Kitut Salsicha", slug: "salsicha" },
       { name: "Kitut Fiambre Bovino/Frango", slug: "fiambre" },
-      { name: "Kitut FeijProdutosLaticiniosoada", slug: "feijoada" },
+      { name: "Kitut Feijoada", slug: "feijoada" },
     ],
   },
   {

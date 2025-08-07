@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
-import { Charque, ProdutosLeites, ProdutosEnlatados, ProdutosLaticinios } from "@/assets";
+import { Charque, ProdutosEnlatados, ProdutosLaticinios } from "@/assets";
 import { useRouter } from "next/navigation";
 
 const products = [
