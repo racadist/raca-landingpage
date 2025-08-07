@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import { Charque, ProdutosEnlatados, ProdutosLaticinios } from "@/assets";
 import { useRouter } from "next/navigation";
+import { useIsMobile } from "@/hooks/use-mobile";
 
 const products = [
   {

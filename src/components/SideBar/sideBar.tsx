@@ -53,12 +53,20 @@ export function Sidebar() {
         {showProductsSidebar && isMobile ? (
           <div className="flex flex-col gap-6">
             {/* Botão voltar */}
-            <button
-              className="text-left text-[#BB1717] font-medium hover:underline cursor-pointer"
-              onClick={handleBack}
-            >
-              ← Voltar
-            </button>
+            <div className="flex justify-between gap-2">
+              <button
+                className="text-left text-[#BB1717] font-medium hover:underline cursor-pointer"
+                onClick={handleBack}
+              >
+                ← Voltar
+              </button>
+              <button
+                className="text-left text-[#26294D] font-semibold hover:underline cursor-pointer"
+                onClick={() => { router.push("/products"); setIsSidebarOpen(false); }}
+              >
+                Ir para página de Produtos →
+              </button>
+            </div>
 
             {/* SidebarProducts renderizada no lugar da navegação principal */}
             <SidebarProducts onClose={handleClose} />
