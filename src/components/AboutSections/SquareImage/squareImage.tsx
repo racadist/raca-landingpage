@@ -1,11 +1,11 @@
 import Image from "next/image";
 import React from "react";
 
-interface HexagonCardProps {
+interface SquareCardProps {
     className?: string;
 }
   
-export const HexagonImage: React.FC<HexagonCardProps> = ({ className = '' }) => {
+export const SquareImage: React.FC<SquareCardProps> = ({ className = '' }) => {
     return (
       <div className={`relative ${className}`}>
         <div className="relative w-[320px] h-[320px] sm:w-[420px] sm:h-[420px] mx-auto -ml-8 -mt-8">
@@ -36,4 +36,4 @@ export const HexagonImage: React.FC<HexagonCardProps> = ({ className = '' }) => 
       );
 };
 
-export default HexagonImage;
+export default SquareImage;

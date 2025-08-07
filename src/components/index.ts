@@ -5,8 +5,9 @@ import { SectionTestimonials } from "./HomeSections/SectionTestimonials/sectionT
 import { SectionProducts } from "./HomeSections/SectionProducts/sectionProducts";
 import { DifferenceSection } from "./AboutSections/DifferenceSection/diferrenceSection";
 import { SealSection } from "./AboutSections/SealSection/sealSection";
-import { SegmentsSection } from "./ProductSections/SegmentsSection/segmentsSection";
+import { SegmentsSection } from "./ProductSections/ClientsSection/clientsSection";
 import { ContactMapSection } from "./ProductSections/ContactSection/contactSection";
-import { GridProducts } from "./ProductSections/GridProducts/gridProducts";
+import { GridProducts } from "./ProductSections/GridProductsSection/gridProducts";
+import { PillarsSection } from "./AboutSections/PillarsSection/pillarsSection";
 
-export { Sidebar, TopBar, SectionAbout, SectionTestimonials, SectionProducts, DifferenceSection, SealSection, SegmentsSection, ContactMapSection, GridProducts };
+export { Sidebar, TopBar, SectionAbout, SectionTestimonials, SectionProducts, DifferenceSection, SealSection, SegmentsSection, ContactMapSection, GridProducts, PillarsSection };

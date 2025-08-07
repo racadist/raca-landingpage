@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { categories } from "../ProductSections/GridProducts/types";
+import { categories } from "../ProductSections/GridProductsSection/types";
 
 interface SidebarProductsProps {
   selectedCategorySlug?: string;

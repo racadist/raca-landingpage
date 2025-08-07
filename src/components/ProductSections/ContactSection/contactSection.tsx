@@ -8,12 +8,12 @@ export const representantes = [
   {
     nome: "Josinaldo Correia",
     regiao: "Região Metropolitana",
-    whatsapp: "55819993235217",
+    whatsapp: "5581993235217",
   },
   {
     nome: "Adair Neto",
     regiao: "Interior do Estado",
-    whatsapp: "55819993235218",
+    whatsapp: "5581993235218",
   },
 ];
 

@@ -2,7 +2,7 @@
 import React from "react";
 import { Forklift, Handshake, BadgeCheck } from "lucide-react";
 import { motion } from "motion/react";
-import { HexagonImage } from "@/components/HexagonImage/hexagonImage";
+import { SquareImage } from "@/components/AboutSections/SquareImage/squareImage";
 
 const features = [
   {
@@ -24,7 +24,7 @@ export function DifferenceSection() {
     <section className="py-16 bg-white">
       <div className="container mx-auto flex flex-col lg:flex-row justify-center items-center gap-44 md:gap-40">
 
-      <HexagonImage />
+      <SquareImage />
       {/* Conteúdo */}
       <div className="flex-1 flex flex-col items-center text-center">
         <h2 className="text-3xl sm:text-4xl md:text-5xl text-[#223872] mb-4 sm:mb-6 font-gilroy font-extrabold">
