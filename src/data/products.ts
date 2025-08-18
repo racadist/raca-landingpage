@@ -61,6 +61,21 @@ export interface Product {
     name: string;
     description: string;
     image: StaticImageData;
+    nutrition?: {
+      portion: string;
+      items: { name: string; amount: string; dailyValue: string }[];
+      legend: string[];
+    };
+    ingredients?: {
+      list: string;
+      legend: string[];
+      codes: {
+        ean: string;
+        dun: string;
+        sku: string;
+        validity: string;
+      };
+    };
   }
 
   export const products: Product[] = [
@@ -135,30 +150,244 @@ export interface Product {
       name: "Bebida Láctea Kids Chocolate",
       description: "Bebida láctea sabor chocolate",
       image: BebidaChocolate,
+       nutrition: {
+        portion: "200 ml (1 unidade)",
+        items: [
+          { name: "Valor energético", amount: "133 kcal = 559 kJ", dailyValue: "7" },
+          { name: "Carboidratos", amount: "24 g", dailyValue: "8" },
+          { name: "Proteínas", amount: "2,5 g", dailyValue: "3" },
+          { name: "Gorduras Totais", amount: "3,0 g", dailyValue: "5" },
+          { name: "Gorduras Saturadas", amount: "1,7 g", dailyValue: "8" },
+          { name: "Gorduras Trans", amount: "0", dailyValue: "**" },
+          { name: "Fibra Alimentar", amount: "1,4 g", dailyValue: "6" },
+          { name: "Sódio", amount: "247 mg", dailyValue: "10" },
+          { name: "Vitamina A", amount: "180 mcgRE", dailyValue: "30" },
+          { name: "Vitamina B1", amount: "0,36 mg", dailyValue: "30" },
+          { name: "Vitamina B2", amount: "0,39 mg", dailyValue: "30" },
+          { name: "Cálcio", amount: "94 mg", dailyValue: "9" },
+          { name: "Vitamina B6", amount: "0,39 mg", dailyValue: "30" },
+          { name: "Vitamina C", amount: "14 mg", dailyValue: "31" },
+          { name: "Vitamina E", amount: "3,0 mg", dailyValue: "30" },
+          { name: "Vitamina B12", amount: "0,72 mcg", dailyValue: "30" },
+          { name: "Ácido Fólico", amount: "72 mcg", dailyValue: "30" },
+          { name: "Vitamina PP", amount: "4,8 mg", dailyValue: "30" },
+          { name: "Ácido Pantotênico", amount: "1,5 mg", dailyValue: "30" },
+        ],
+        legend: [
+          '"Não contém quantidades significativas de gorduras trans e fibra alimentar."',
+          "* % Valores Diários com base em uma dieta de 2.000 kcal ou 8400 kJ. Seus valores diários podem ser maiores ou menores dependendo de suas necessidades energéticas. **Não Estabelecido.",
+        ],
+      },
+      ingredients: {
+        list:
+          "SORO DE LEITE E/OU SORO DE LEITE EM PÓ RECONSTITUÍDO, LEITE INTEGRAL E/OU LEITE EM PÓ INTEGRAL RECONSTITUÍDO, AÇÚCAR, CREME DE LEITE, AMIDO MODIFICADO, CACAU, VITAMINAS A, B1, B2, B6, B12, C, E, PP, ÁCIDO FÓLICO, PANTOTENATO DE CÁLCIO, CLORETO DE SÓDIO, MISTURA DE ESTABILIZANTES PARA BEBIDA LÁCTEA UHT (CARBOXIMETILCELULOSE SÓDICA, CELULOSE MICROCRISTALINA, GOMA GUAR E CARRAGENA), ESTABILIZANTES FOSFATO DISSÓDICO, CITRATO DE SÓDIO E FOSFATO MONOSSÓDICO E AROMATIZANTES.",
+        legend: [
+          "CONTÉM LEITE E DERIVADOS. CONTÉM LACTOSE.",
+          "NÃO CONTÉM GLÚTEN.",
+          "Contém aromatizante sintético idêntico ao natural.",
+          "Após aberto, consumir em sua totalidade. Não necessita de refrigeração.",
+        ],
+        codes: {
+          ean: "7896051111856",
+          dun: "17896051111853",
+          sku: "600263003",
+          validity: "180 dias",
+        },
+      },
     },
     {
       id: "bebida-morango",
       name: "Bebida Láctea Kids Morango",
       description: "Bebida láctea sabor morango",
       image: BebidaMorango,
+      nutrition: {
+        portion: "Porção de 200 ml (1 unidade)",
+        items: [
+          { "name": "Valor energético", "amount": "129 kcal = 542 kJ", "dailyValue": "6" },
+          { "name": "Carboidratos", "amount": "24 g", "dailyValue": "8" },
+          { "name": "Proteínas", "amount": "3,1 g", "dailyValue": "4" },
+          { "name": "Gorduras Totais", "amount": "2,3 g", "dailyValue": "4" },
+          { "name": "Gorduras Saturadas", "amount": "1,1 g", "dailyValue": "5" },
+          { "name": "Gorduras Trans", "amount": "0", "dailyValue": "**" },
+          { "name": "Fibra Alimentar", "amount": "0,9 g", "dailyValue": "4" },
+          { "name": "Sódio", "amount": "85 mg", "dailyValue": "4" },
+          { "name": "Vitamina A", "amount": "180 mcgRE", "dailyValue": "30" },
+          { "name": "Vitamina B1", "amount": "0,36 mg", "dailyValue": "30" },
+          { "name": "Vitamina B2", "amount": "0,39 mg", "dailyValue": "30" },
+          { "name": "Cálcio", "amount": "122 mg", "dailyValue": "12" },
+          { "name": "Vitamina B6", "amount": "0,39 mg", "dailyValue": "30" },
+          { "name": "Vitamina C", "amount": "14 mg", "dailyValue": "31" },
+          { "name": "Vitamina E", "amount": "3,0 mg", "dailyValue": "30" },
+          { "name": "Vitamina B12", "amount": "0,72 mcg", "dailyValue": "30" },
+          { "name": "Ácido Fólico", "amount": "72 mcg", "dailyValue": "30" },
+          { "name": "Vitamina PP", "amount": "4,8 mg", "dailyValue": "30" },
+          { "name": "Ácido Pantonênico", "amount": "1,5 mg", "dailyValue": "30" }
+        ],
+        legend: [
+          "\"Não contém quantidades significativas de gorduras trans e fibra alimentar.\"",
+          "* % Valores Diários com base em uma dieta de 2.000 kcal ou 8400 kJ. Seus valores diários podem ser maiores ou menores dependendo de suas necessidades energéticas. **Não Estabelecido."
+        ]
+      },
+      ingredients: {
+        list: "SORO DE LEITE E/OU SORO DE LEITE EM PÓ RECONSTITUÍDO, LEITE INTEGRAL E/OU LEITE EM PÓ RECONSTITUÍDO, AÇÚCAR, PREPARADO DE MORANGO (ÁGUA, AÇÚCAR, MORANGO, AROMATIZANTE, CORANTE CARMIM DE COCHONILHA, ESPESSANTES GOMA XANTANA E GOMA GUAR, CONSERVANTE SORBATO DE POTÁSSIO E ACIDULANTE ÁCIDO CÍTRICO), VITAMINAS (C, E, NIACINA(PP), A, ÁCIDO PANTONÊNICO (PANTOTENATO DE CÁLCIO), ÁCIDO FÓLICO, B12, B6, TIAMINA (B1) E RIBOFLAVINA (B2)), ESTABILIZANTES FOSFATO DISSÓDICO, CITRATO DE SÓDIO, GOMA GUAR, CELULOSE MICROCRISTALINA, CARBOXIMETILCELULOSE SÓDICA, CARRAGENA E AROMATIZANTES",
+        legend: [
+          "CONTÉM LEITE E DERIVADOS. CONTÉM LACTOSE.",
+          "NÃO CONTÉM GLÚTEN.",
+          "Contém aromatizante.",
+          "Aromatizado artificialmente.",
+          "Não necessita de refrigeração. Após aberto, consumir em sua totalidade."
+        ],
+        codes: {
+          ean: "7896051111863",
+          dun: "17896051111860",
+          sku: "600267003",
+          validity: "180 dias"
+        }
+      }
     },
     {
       id: "bebida-vitamina",
       name: "Bebida Láctea Kids Vitamina",
       description: "Bebida láctea sabor vitamina",
       image: BebidaVitamina,
+        nutrition: {
+        portion: "200 ml (1 unidade)",
+        items: [
+          { name: "Valor energético",   amount: "133 kcal = 559 kJ", dailyValue: "7" },
+          { name: "Carboidratos",       amount: "24 g",              dailyValue: "8" },
+          { name: "Proteínas",          amount: "2,5 g",             dailyValue: "3" },
+          { name: "Gorduras Totais",    amount: "3,0 g",             dailyValue: "5" },
+          { name: "Gorduras Saturadas", amount: "1,7 g",             dailyValue: "8" },
+          { name: "Gorduras Trans",     amount: "0",                 dailyValue: "**" },
+          { name: "Fibra Alimentar",    amount: "1,4 g",             dailyValue: "6" },
+          { name: "Sódio",              amount: "247 mg",            dailyValue: "10" },
+          { name: "Vitamina A",         amount: "180 mcgRE",         dailyValue: "30" },
+          { name: "Vitamina B1",        amount: "0,36 mg",           dailyValue: "30" },
+          { name: "Vitamina B2",        amount: "0,39 mg",           dailyValue: "30" },
+          { name: "Cálcio",             amount: "94 mg",             dailyValue: "9" },
+          { name: "Vitamina B6",        amount: "0,39 mg",           dailyValue: "30" },
+          { name: "Vitamina C",         amount: "14 mg",             dailyValue: "31" },
+          { name: "Vitamina E",         amount: "3,0 mg",            dailyValue: "30" },
+          { name: "Vitamina B12",       amount: "0,72 mcg",          dailyValue: "30" },
+          { name: "Ácido Fólico",       amount: "72 mcg",            dailyValue: "30" },
+          { name: "Vitamina PP",        amount: "4,8 mg",            dailyValue: "30" },
+          { name: "Ácido Pantotênico",  amount: "1,5 mg",            dailyValue: "30" },
+        ],
+        legend: [
+          "\"Não contém quantidades significativas de gorduras trans e fibra alimentar.\"",
+          "* % Valores Diários com base em uma dieta de 2.000 kcal ou 8400 kJ. Seus valores diários podem ser maiores ou menores dependendo de suas necessidades energéticas. **Não Estabelecido."
+        ]
+      },
+
+      ingredients: {
+        list:
+          "SORO DE LEITE E/OU SORO DE LEITE EM PÓ RECONSTITUÍDO, LEITE INTEGRAL E/OU LEITE EM PÓ INTEGRAL RECONSTITUÍDO, AÇÚCAR, CREME DE LEITE, AMIDO MODIFICADO, CACAU, VITAMINAS A, B1, B2, B6, B12, C, E, PP, ÁCIDO FÓLICO, PANTOTENATO DE CÁLCIO, CLORETO DE SÓDIO, MISTURA DE ESTABILIZANTES PARA BEBIDA LÁCTEA UHT (CARBOXIMETILCELULOSE SÓDICA, CELULOSE MICROCRISTALINA, GOMA GUAR E CARRAGENA), ESTABILIZANTES FOSFATO DISSÓDICO, CITRATO DE SÓDIO E FOSFATO MONOSSÓDICO E AROMATIZANTES.",
+        legend: [
+          "CONTÉM LEITE E DERIVADOS. CONTÉM LACTOSE.",
+          "NÃO CONTÉM GLÚTEN.",
+          "Contém aromatizante sintético idêntico ao natural.",
+          "Após aberto, consumir em sua totalidade. Não necessita de refrigeração."
+        ],
+        codes: {
+          ean: "7896051111856",
+          dun: "17896051111853",
+          sku: "600263003",
+          validity: "180 dias"
+        }
+      }
     },
     {
       id: "bebida-uht-chocolate",
       name: "Bebida Láctea UHT Chocolate",
       description: "Bebida láctea UHT sabor chocolate",
       image: BebidaUHTChocolate,
+      nutrition: {
+        portion: "Porção de 200ml (1 copo)",
+        items: [
+          { name: "Valor Energético", amount: "132 kcal = 554 kj", dailyValue: "7" },
+          { name: "Carboidratos", amount: "24 g", dailyValue: "8" },
+          { name: "Proteínas", amount: "2,4 g", dailyValue: "3" },
+          { name: "Gorduras Totais", amount: "2,9 g", dailyValue: "5" },
+          { name: "Gorduras Saturadas", amount: "1,5 g", dailyValue: "7" },
+          { name: "Gorduras Trans", amount: "0", dailyValue: "**" },
+          { name: "Fibra alimentar", amount: "0,8 g", dailyValue: "3" },
+          { name: "Vitamina A", amount: "180 mcgRE", dailyValue: "30" },
+          { name: "Vitamina C", amount: "14 mg", dailyValue: "31" },
+          { name: "Cálcio", amount: "116 mg", dailyValue: "12" },
+          { name: "Sódio", amount: "124 mg", dailyValue: "5" }
+        ],
+        legend: [
+          '"Não contém quantidades significativas de gorduras trans e fibra alimentar."',
+          "* % Valores Diários com base em uma dieta de 2.000 kcal ou 8400 kJ. Seus valores diários podem ser maiores ou menores dependendo de suas necessidades energéticas. **Não Estabelecido."
+        ]
+      },
+      ingredients: {
+        list: "Soro de leite e/ou soro de leite em pó reconstituído, Leite integral e/ou leite em pó integral reconstituído, Açúcar, Creme de leite, Amido modificado, Cacau, Vitaminas A, B1, B2, B6, B12, C, E, PP, Ácido fólico, Pantotenato de cálcio, Cloreto de sódio, Estabilizantes (CMC, celulose microcristalina, goma guar, carragena, fosfato dissódico, citrato de sódio, fosfato monossódico), Aromatizantes.",
+        legend: [
+          "CONTÉM LEITE E DERIVADOS. CONTÉM LACTOSE.",
+          "Não contém glúten.",
+          "Contém aromatizante sintético idêntico ao natural.",
+          "Após aberto, consumir em até 02 dias. Não necessita de refrigeração."
+        ],
+        codes: {
+          ean: "7896051111849",
+          dun: "27896051111843",
+          sku: "600261007",
+          validity: "180 dias"
+        }
+      }
     },
     {
       id: "bebida-uht-vitamina",
       name: "Bebida UHT de Vitamina",
       description: "Bebida láctea UHT sabor vitamina",
       image: BebidaUHTVitamina,
+      nutrition: {
+        portion: "200ml (1 unidade)",
+        items: [
+          { name: "Valor Energético", amount: "125kcal = 525kJ", dailyValue: "6%" },
+          { name: "Carboidratos", amount: "23g", dailyValue: "8%" },
+          { name: "Proteínas", amount: "3,0g", dailyValue: "4%" },
+          { name: "Gorduras totais", amount: "2,5g", dailyValue: "5%" },
+          { name: "Gorduras saturadas", amount: "1,4g", dailyValue: "6%" },
+          { name: "Gorduras trans", amount: "0", dailyValue: "**" },
+          { name: "Fibra alimentar", amount: "0", dailyValue: "0%" },
+          { name: "Sódio", amount: "114mg", dailyValue: "5%" },
+          { name: "Cálcio", amount: "140mg", dailyValue: "14%" },
+          { name: "Vitamina A", amount: "180mcgRE", dailyValue: "30%" },
+          { name: "Vitamina B1", amount: "0,36mg", dailyValue: "30%" },
+          { name: "Vitamina B2", amount: "0,39mg", dailyValue: "30%" },
+          { name: "Vitamina B6", amount: "0,39mg", dailyValue: "30%" },
+          { name: "Vitamina B12", amount: "0,72mcg", dailyValue: "30%" },
+          { name: "Vitamina C", amount: "14mg", dailyValue: "31%" },
+          { name: "Vitamina E", amount: "3,0mg", dailyValue: "30%" },
+          { name: "Vitamina PP", amount: "4,8mg", dailyValue: "30%" },
+          { name: "Ácido Fólico", amount: "72mcg", dailyValue: "30%" },
+          { name: "Pantotenato de Cálcio", amount: "1,5mg", dailyValue: "30%" }
+        ],
+        legend: [
+          "Não contém quantidades significativas de gorduras trans e fibra alimentar.",
+          "* % Valores Diários com base em uma dieta de 2.000 kcal ou 8400 kJ.",
+          "Seus valores diários podem ser maiores ou menores dependendo de suas necessidades energéticas.",
+          "** Não estabelecido."
+        ]
+      },
+      ingredients: {
+        list: "Soro de leite e/ou soro de leite em pó reconstituído, leite integral e/ou leite em pó integral reconstituído, preparado de frutas sabor mamão, maçã, corantes urucum e carmim de cochonilha, espessante goma xantana, aromatizante, acidulante ácido cítrico e conservador sorbato de potássio), açúcar, vitaminas A, B1, B2, B6, B12, C, E, PP, ácido fólico e pantotenato de cálcio, estabilizantes goma guar, celulose microcristalina, carboximetilcelulose sódica, carragena, citrato de sódio e fosfato dissódico e aromatizante.",
+        legend: [
+          "CONTÉM LEITE E DERIVADOS. CONTÉM LACTOSE.",
+          "Não contém glúten.",
+          "Contém aromatizante sintético idêntico ao natural.",
+          "Não precisa de refrigeração.",
+          "Após aberto, consumir em até 02 dias. Manter sob refrigeração."
+        ],
+        codes: {
+          ean: "7896051111832",
+          dun: "27896051111836",
+          sku: "600259007",
+          validity: "120 dias"
+        }
+      }
     },
     {
       id: "bebida-whey-morango",

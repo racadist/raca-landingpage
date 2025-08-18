@@ -34,7 +34,6 @@ export const categories = [
       { name: "Bebida Láctea Kids Vitamina", slug: "bebida-vitamina" },
       { name: "Bebida Láctea UHT Chocolate", slug: "bebida-uht-chocolate" },
       { name: "Bebida Láctea UHT Vitamina", slug: "bebida-uht-vitamina" },
-      { name: "Bebida Láctea UHT Café", slug: "bebida-uht-cafe" },
     ],
   },
   {
