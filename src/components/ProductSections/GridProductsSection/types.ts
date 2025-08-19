@@ -51,6 +51,42 @@ export const categories = [
     ],
   },
   {
+    name: "Leite em Pó & Composto Lácteo",
+    image: ProdutosLeiteEmPo,
+    products: [
+      { name: "Leite em Pó Integral", slug: "leite-em-po-integral" },
+      { name: "Leite em pó Integral Instantâneo", slug: "leite-em-po-integral-instantaneo" },
+      { name: "Leite em Pó Desnatado Instantâneo", slug: "leite-em-po-desnatado-instantaneo" },
+      { name: "Leite em Pó Nolac Integral", slug: "leite-em-po-nolac" },
+      { name: "Leite em Pó Integral Pouch", slug: "leite-em-po-pouch-integral" },
+      { name: "Leite em Pó Instantâneo Pouch", slug: "leite-em-po-instantaneo-pouch" },
+      { name: "Leite em Pó Desnatado Instantâneo Pouch", slug: "leite-em-po-desnatado-instantaneo-pouch" },
+      { name: "Composto Lácteo", slug: "composto-lacteo" },
+      { name: "Leite em Pó Kids", slug: "leite-em-po-kids" }
+    ],
+  },
+  {
+    name: "Carnes Salgadas",
+    image: ProdutosCharque,
+    products: [
+      { name: "Charque Tradicional", slug: "charque-tradicional" },
+    ],
+  },
+  {
+    name: "Conservas",
+    image: ProdutosEnlatados,
+    products: [
+      { name: "Sardinha Cabo Verde em Óleo", slug: "sardinha-oleo" },
+      { name: "Sardinha Cabo Verde em Molho de Tomate", slug: "sardinha-molhotomate" },
+      { name: "Kitut Carne em Conserva", slug: "carne-conserva" },
+      { name: "Kitut Almodega ao molho", slug: "almodega-molho" },
+      { name: "Kitut Salsicha Aperitivo", slug: "salsicha-aperitivo" },
+      { name: "Kitut Salsicha", slug: "salsicha" },
+      { name: "Kitut Fiambre Bovino/Frango", slug: "fiambre" },
+      { name: "Kitut Feijoada", slug: "feijoada" },
+    ],
+  },
+  {
     name: "Doce de Leite",
     image: ProdutosDoceLeite,
     products: [
@@ -76,21 +112,6 @@ export const categories = [
       { name: "Requeijão Nolac", slug: "requeijao-nolac" },
       { name: "Requeijão Light", slug: "requeijao-light" },
       { name: "Cream Cheese Tradicional", slug: "cream-cheese" },
-    ],
-  },
-  {
-    name: "Leite em Pó & Composto Lácteo",
-    image: ProdutosLeiteEmPo,
-    products: [
-      { name: "Leite em Pó Integral", slug: "leite-em-po-integral" },
-      { name: "Leite em pó Integral Instantâneo", slug: "leite-em-po-integral-instantaneo" },
-      { name: "Leite em Pó Desnatado Instantâneo", slug: "leite-em-po-desnatado-instantaneo" },
-      { name: "Leite em Pó Nolac Integral", slug: "leite-em-po-nolac" },
-      { name: "Leite em Pó Integral Pouch", slug: "leite-em-po-pouch-integral" },
-      { name: "Leite em Pó Instantâneo Pouch", slug: "leite-em-po-instantaneo-pouch" },
-      { name: "Leite em Pó Desnatado Instantâneo Pouch", slug: "leite-em-po-desnatado-instantaneo-pouch" },
-      { name: "Composto Lácteo", slug: "composto-lacteo" },
-      { name: "Leite em Pó Kids", slug: "leite-em-po-kids" }
     ],
   },
   {
@@ -122,25 +143,4 @@ export const categories = [
       { name: "Manteiga sem Sal", slug: "manteiga-sem-sal" },
     ],
   },
-  {
-    name: "Conservas",
-    image: ProdutosEnlatados,
-    products: [
-      { name: "Sardinha Cabo Verde em Óleo", slug: "sardinha-oleo" },
-      { name: "Sardinha Cabo Verde em Molho de Tomate", slug: "sardinha-molhotomate" },
-      { name: "Kitut Carne em Conserva", slug: "carne-conserva" },
-      { name: "Kitut Almodega ao molho", slug: "almodega-molho" },
-      { name: "Kitut Salsicha Aperitivo", slug: "salsicha-aperitivo" },
-      { name: "Kitut Salsicha", slug: "salsicha" },
-      { name: "Kitut Fiambre Bovino/Frango", slug: "fiambre" },
-      { name: "Kitut Feijoada", slug: "feijoada" },
-    ],
-  },
-  {
-    name: "Carnes Salgadas",
-    image: ProdutosCharque,
-    products: [
-      { name: "Charque Tradicional", slug: "charque-tradicional" },
-    ],
-  }
 ];
