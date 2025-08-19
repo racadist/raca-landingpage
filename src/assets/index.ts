@@ -38,6 +38,8 @@ import LeiteEmPoPouchIntegral from "@/assets/products/leite-po-pouch-integral.pn
 import LeiteEmPoPouchInstantaneo from "@/assets/products/leite-po-pouch-inst.png";
 import LeiteEmPoDesnatadoInstantaneo from "@/assets/products/leite-po-desnatado-inst.png";
 import LeiteEmPoIntegralInstantaneo from "@/assets/products/leite-po-integral-inst.png";
+import LeiteEmPoKids from "@/assets/products/leite-po-kids.png";
+import LeiteEmPoPouchDesnatadoInstataneo from "@/assets/products/leite-po-pouch-desnatado-inst.png";
 
 import ProdutosRequeijao from "@/assets/categories/Produtos-Requeijao.png";
 import RequeijaoCremoso from "@/assets/products/requeijao-cremoso.png";
@@ -111,7 +113,9 @@ export {
     LeiteEmPoPouchIntegral,
     LeiteEmPoPouchInstantaneo,
     LeiteEmPoDesnatadoInstantaneo,
-    LeiteEmPoIntegralInstantaneo, 
+    LeiteEmPoIntegralInstantaneo,
+    LeiteEmPoKids,
+    LeiteEmPoPouchDesnatadoInstataneo,
     BebidaChocolate,
     BebidaMorango,
     BebidaVitamina,

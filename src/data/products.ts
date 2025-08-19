@@ -22,6 +22,8 @@ import {
   LeiteEmPoNolac,
   LeiteEmPoPouchIntegral,
   LeiteEmPoPouchInstantaneo,
+  LeiteEmPoKids,
+  LeiteEmPoPouchDesnatadoInstataneo,
   RequeijaoCremoso,
   RequeijaoLight,
   RequeijaoNolac,
@@ -1031,21 +1033,122 @@ export interface Product {
     },
     {
       id: "leite-em-po-integral",
-      name: "Leite em Pó Integral",
+      name: "Leite em Pó Integral Sachê 200G",
       description: "Leite em pó integral para uso culinário",
       image: LeiteEmPoIntegral,
+      nutrition: {
+        portion: "26g (2 colheres de sopa)",
+        items: [
+          { name: "Valor Energético", amount: "129 kcal = 542 kj", dailyValue: "6" },
+          { name: "Carboidrato", amount: "9,6 g", dailyValue: "3" },
+          { name: "Proteínas", amount: "6,7 g", dailyValue: "9" },
+          { name: "Gorduras Totais", amount: "7,1 g", dailyValue: "13" },
+          { name: "Gorduras Saturadas", amount: "4,4 g", dailyValue: "20" },
+          { name: "Gorduras Trans", amount: "0", dailyValue: "**" },
+          { name: "Fibra Alimentar", amount: "0", dailyValue: "0" },
+          { name: "Sódio", amount: "91 mg", dailyValue: "4" },
+          { name: "Cálcio", amount: "239 mg", dailyValue: "24" }
+        ],
+        legend: [
+          "\"Não contém quantidades significativas de gorduras trans e fibra alimentar.\"",
+          "* % Valores Diários com base em uma dieta de 2.000 kcal ou 8400 kJ. Seus valores diários podem ser maiores ou menores dependendo de suas necessidades energéticas. **Não Estabelecido."
+        ]
+      },
+
+      ingredients: {
+        list: "Leite integral.",
+        legend: [
+          "CONTÉM LEITE. CONTÉM LACTOSE. PODE CONTER DERIVADOS DE SOJA.",
+          "NÃO CONTÉM GLÚTEN.",
+          "Manter em local seco e arejado.",
+          "Quando não for utilizado todo o conteúdo, dobre a embalagem e guarde em recipiente fechado e seco. Após aberto, consumir em 30 dias."
+        ],
+        codes: {
+          ean: "7896051130055",
+          dun: "47896051130053",
+          sku: "600301100",
+          validity: "365 dias"
+        }
+      }
     },
     {
       id: "leite-em-po-integral-instantaneo",
       name: "Leite em pó Integral Instantâneo",
       description: "Leite em pó integral instantâneo",
       image: LeiteEmPoIntegralInstantaneo,
+      nutrition: {
+        portion: "26g (2 colheres de sopa)",
+        items: [
+          { name: "Valor Energético", amount: "129 kcal = 542 kj", dailyValue: "6" },
+          { name: "Carboidrato", amount: "9,6 g", dailyValue: "3" },
+          { name: "Proteínas", amount: "6,7 g", dailyValue: "9" },
+          { name: "Gorduras Totais", amount: "7,1 g", dailyValue: "13" },
+          { name: "Gorduras Saturadas", amount: "4,4 g", dailyValue: "20" },
+          { name: "Gorduras Trans", amount: "0", dailyValue: "**" },
+          { name: "Fibra Alimentar", amount: "0", dailyValue: "0" },
+          { name: "Sódio", amount: "75 mg", dailyValue: "3" },
+          { name: "Cálcio", amount: "239 mg", dailyValue: "24" }
+        ],
+        legend: [
+          "\"Não contém quantidades significativas de gorduras trans e fibra alimentar.\"",
+          "* % Valores Diários com base em uma dieta de 2.000 kcal ou 8400 kJ. Seus valores diários podem ser maiores ou menores dependendo de suas necessidades energéticas. **Não Estabelecido."
+        ]
+      },
+
+      ingredients: {
+        list: "Leite integral e emulsificante lecitina de soja.",
+        legend: [
+          "CONTÉM LEITE. CONTÉM LACTOSE. PODE CONTER DERIVADOS DE SOJA.",
+          "NÃO CONTÉM GLÚTEN.",
+          "Manter em local seco e arejado.",
+          "Quando não for utilizado todo o conteúdo, dobre a embalagem e guarde em recipiente fechado e seco. Após aberto, consumir em 30 dias."
+        ],
+        codes: {
+          ean: "7896051130079",
+          dun: "47896051130077",
+          sku: "600306100",
+          validity: "365 dias"
+        }
+      }
     },
     {
       id: "leite-em-po-desnatado-instantaneo",
       name: "Leite em pó Desnatado Instantâneo",
       description: "Leite em pó desnatado instantâneo",
       image: LeiteEmPoDesnatadoInstantaneo,
+      nutrition: {
+        portion: "Porção de 20g (1 e 1/2 colher de sopa)",
+        items: [
+          { name: "Valor energético", amount: "68 kcal = 286 kj", dailyValue: "3" },
+          { name: "Carboidratos", amount: "10 g", dailyValue: "3" },
+          { name: "Proteínas", amount: "6,9 g", dailyValue: "9" },
+          { name: "Gorduras Totais", amount: "0", dailyValue: "0" },
+          { name: "Gorduras Saturadas", amount: "0", dailyValue: "0" },
+          { name: "Gorduras Trans", amount: "0", dailyValue: "**" },
+          { name: "Fibra Alimentar", amount: "0", dailyValue: "0" },
+          { name: "Sódio", amount: "80 mg", dailyValue: "3" },
+          { name: "Cálcio", amount: "260 mg", dailyValue: "26" }
+        ],
+        legend: [
+          "\"Não contém quantidades significativas de gorduras trans e fibra alimentar.\"",
+          "* % Valores Diários com base em uma dieta de 2.000 kcal ou 8400 kJ. Seus valores diários podem ser maiores ou menores dependendo de suas necessidades energéticas. **Não Estabelecido."
+        ]
+      },
+      ingredients: {
+        list: "Leite desnatado e emulsificante lecitina de soja.",
+        legend: [
+          "CONTÉM LEITE. CONTÉM LACTOSE. PODE CONTER DERIVADOS DE SOJA.",
+          "NÃO CONTÉM GLÚTEN.",
+          "Manter em local seco e arejado.",
+          "Quando não for utilizado todo o conteúdo, dobre a embalagem e guarde em recipiente fechado e seco. Após aberto, consumir em 30 dias."
+        ],
+        codes: {
+          ean: "7896051131069",
+          dun: "37896051131060",
+          sku: "600352235",
+          validity: "365 dias"
+        }
+      }
     },
     {
       id: "composto-lacteo",
@@ -1058,18 +1161,232 @@ export interface Product {
       name: "Leite em Poó Nolac Integral",
       description: "Leite em pó sem lactose",
       image: LeiteEmPoNolac,
+       nutrition: {
+        portion: "100 g",
+        items: [
+          { name: "Valor Energético", amount: "495 kcal = 2079 kJ", dailyValue: "25" },
+          { name: "Carboidratos, dos quais:", amount: "37 g", dailyValue: "12" },
+          { name: "Glicose", amount: "18 g", dailyValue: "**" },
+          { name: "Galactose", amount: "18 g", dailyValue: "**" },
+          { name: "Lactose", amount: "0", dailyValue: "**" },
+          { name: "Proteínas", amount: "26 g", dailyValue: "35" },
+          { name: "Gorduras totais", amount: "27 g", dailyValue: "49" },
+          { name: "Gorduras saturadas", amount: "17 g", dailyValue: "77" },
+          { name: "Gorduras trans", amount: "0", dailyValue: "**" },
+          { name: "Fibra alimentar", amount: "0", dailyValue: "0" },
+          { name: "Sódio", amount: "290 mg", dailyValue: "12" },
+          { name: "Vitamina A", amount: "692 mcgRE", dailyValue: "115" },
+          { name: "Vitamina C", amount: "52 mg", dailyValue: "116" },
+          { name: "Vitamina D", amount: "5,8 mcg", dailyValue: "116" },
+          { name: "Vitamina E", amount: "12", dailyValue: "120" },
+          { name: "Zinco", amount: "8,1 mg", dailyValue: "116" },
+          { name: "Ferro", amount: "16 mg", dailyValue: "114" },
+          { name: "Cálcio", amount: "1318 mg", dailyValue: "132" }
+        ],
+        legend: [
+          "\"Não contém quantidades significativas de gorduras trans e fibra alimentar.\"",
+          "* % Valores Diários com base em uma dieta de 2.000 kcal ou 8400 kJ. Seus valores diários podem ser maiores ou menores dependendo de suas necessidades energéticas. **Não Estabelecido."
+        ]
+      },
+      ingredients: {
+        list: "Leite integral, enzima lactase, fosfato tricálcio, vitaminas A, C, D e E, ferro, zinco e emulsificante lecitina de soja.",
+        legend: [
+          "CONTÉM LEITE E DERIVADOS DE SOJA.",
+          "Não contém glúten.",
+          "Diabéticos: Contém glicose.",
+          "Galactosêmicos: Contém Galactose.",
+          "Manter em local seco e arejado. Quando não for utilizado todo o conteúdo, dobre a embalagem e guarde em recipiente fechado e seco. Após aberto, consumir em 30 dias."
+        ],
+        codes: {
+          ean: "7896051128441",
+          dun: "57896051128446",
+          sku: "600316300",
+          validity: "270 dias"
+        }
+      }
     },
     {
       id: "leite-em-po-pouch-integral",
-      name: "Leite em pó Integral Pouch",
-      description: "Leite em pó integral em embalagem pouch",
+      name: "Leite em Pó Integral Pouch 750g",
+      description: "Rico em vitaminas A, C, D, E, zinco, ferro e cálcio",
       image: LeiteEmPoPouchIntegral,
+      nutrition: {
+        portion: "26g (2 colheres de sopa)",
+        items: [
+          { name: "Valor Energético", amount: "131 kcal = 550 kj", dailyValue: "7" },
+          { name: "Carboidratos", amount: "11 g", dailyValue: "4" },
+          { name: "Proteínas", amount: "6,3 g", dailyValue: "11" },
+          { name: "Gorduras Totais", amount: "6,9 g", dailyValue: "13" },
+          { name: "Gorduras Saturadas", amount: "4,5 g", dailyValue: "20" },
+          { name: "Gorduras Trans", amount: "0", dailyValue: "**" },
+          { name: "Fibra Alimentar", amount: "0", dailyValue: "0" },
+          { name: "Sódio", amount: "72 mg", dailyValue: "3" },
+          { name: "Vitamina A", amount: "90 mcgRE", dailyValue: "15" },
+          { name: "Vitamina C", amount: "6,8 mg", dailyValue: "15" },
+          { name: "Vitamina D", amount: "0,75 mcg", dailyValue: "15" },
+          { name: "Vitamina E", amount: "1,5 mg", dailyValue: "15" },
+          { name: "Zinco", amount: "1,1 mg", dailyValue: "16" },
+          { name: "Ferro", amount: "2,1 mg", dailyValue: "15" },
+          { name: "Cálcio", amount: "237 mg", dailyValue: "24" }
+        ],
+        legend: [
+          "\"Não contém quantidades significativas de gorduras trans e fibra alimentar.\"",
+          "* % Valores Diários com base em uma dieta de 2.000 kcal ou 8400 kJ. Seus valores diários podem ser maiores ou menores dependendo de suas necessidades energéticas. **Não Estabelecido."
+        ]
+      },
+      ingredients: {
+        list: "Leite integral, vitaminas A, C, D e E, ferro e zinco.",
+        legend: [
+          "CONTÉM LEITE. CONTÉM LACTOSE. PODE CONTER DERIVADOS DE SOJA.",
+          "NÃO CONTÉM GLÚTEN.",
+          "Manter em local seco e arejado.",
+          "Quando não for utilizado todo o conteúdo, dobre a embalagem e guarde em recipiente fechado e seco. Após aberto, consumir em 30 dias."
+        ],
+        codes: {
+          ean: "7896051130086",
+          dun: "17896051130083",
+          sku: "600307288",
+          validity: "365 dias"
+        }
+      }
+    },
+    {
+      id: "leite-em-po-desnatado-instantaneo-pouch",
+      name: "Leite em Pó Desnatado Instantâneo Pouch 500g",
+      description: "Rico em vitaminas A, C, D, E, zinco, ferro e cálcio",
+      image: LeiteEmPoPouchDesnatadoInstataneo,
+      nutrition: {
+        portion: "20 g (1 e 1/2 colher de sopa)",
+        items: [
+          { name: "Valor Energético", amount: "68 kcal = 286 kj", dailyValue: "3" },
+          { name: "Carboidratos", amount: "10 g", dailyValue: "3" },
+          { name: "Proteínas", amount: "6,9 g", dailyValue: "9" },
+          { name: "Gorduras Totais", amount: "0", dailyValue: "0" },
+          { name: "Gorduras Saturadas", amount: "0", dailyValue: "0" },
+          { name: "Gorduras Trans", amount: "0", dailyValue: "**" },
+          { name: "Fibra Alimentar", amount: "0", dailyValue: "0" },
+          { name: "Sódio", amount: "80 mg", dailyValue: "3" },
+          { name: "Vitamina A", amount: "180 mcgRE", dailyValue: "30" },
+          { name: "Vitamina C", amount: "14 mg", dailyValue: "30" },
+          { name: "Vitamina D", amount: "1,5 mg", dailyValue: "30" },
+          { name: "Vitamina E", amount: "3,0 mg", dailyValue: "30" },
+          { name: "Zinco", amount: "2,1 mg", dailyValue: "30" },
+          { name: "Cálcio", amount: "260 mg", dailyValue: "26" }
+        ],
+        legend: [
+          "\"Não contém quantidades significativas de gorduras trans e fibra alimentar.\"",
+          "* % Valores Diários com base em uma dieta de 2.000 kcal ou 8400 kJ. Seus valores diários podem ser maiores ou menores dependendo de suas necessidades energéticas. **Não Estabelecido."
+        ]
+      },
+      ingredients: {
+        list: "Leite desnatado, vitaminas A, C e D e E, zinco e emulsificante lecitina de soja.",
+        legend: [
+          "CONTÉM LEITE. CONTÉM LACTOSE. PODE CONTER DERIVADOS DE SOJA.",
+          "NÃO CONTÉM GLÚTEN.",
+          "Manter em local seco e arejado.",
+          "Quando não for utilizado todo o conteúdo, dobre a embalagem e guarde em recipiente fechado e seco. Após aberto, consumir em 30 dias."
+        ],
+        codes: {
+          ean: "7896051130109",
+          dun: "17896051130106",
+          sku: "600352289",
+          validity: "365 dias"
+        }
+      }
     },
     {
       id: "leite-em-po-instantaneo-pouch",
-      name: "Leite em pó Instantâneo Pouch",
-      description: "Leite em pó instantâneo em embalagem pouch",
+      name: "Leite em Pó Integral Instantâneo Pouch 750g",
+      description: "Rico em vitaminas A, C, D, E, zinco, ferro e cálcio",
       image: LeiteEmPoPouchInstantaneo,
+      nutrition: {
+        portion: "Porção de 26g (2 colheres de sopa)",
+        items: [
+          { name: "Valor Energético", amount: "129 kcal = 542 kj", dailyValue: "6" },
+          { name: "Carboidratos", amount: "9,6 g", dailyValue: "3" },
+          { name: "Proteínas", amount: "6,7 g", dailyValue: "9" },
+          { name: "Gorduras Totais", amount: "7,1 g", dailyValue: "13" },
+          { name: "Gorduras Saturadas", amount: "4,4 g", dailyValue: "20" },
+          { name: "Gorduras Trans", amount: "0", dailyValue: "**" },
+          { name: "Fibra Alimentar", amount: "0", dailyValue: "0" },
+          { name: "Sódio", amount: "75 mg", dailyValue: "3" },
+          { name: "Vitamina A", amount: "180 mcgRE", dailyValue: "30" },
+          { name: "Vitamina C", amount: "14 mg", dailyValue: "30" },
+          { name: "Vitamina D", amount: "1,5 mcg", dailyValue: "30" },
+          { name: "Vitamina E", amount: "3,0 mg", dailyValue: "30" },
+          { name: "Zinco", amount: "2,1 mg", dailyValue: "30" },
+          { name: "Ferro", amount: "4,2 mg", dailyValue: "30" },
+          { name: "Cálcio", amount: "300 mg", dailyValue: "30" }
+        ],
+        legend: [
+          "\"Não contém quantidades significativas de gorduras trans e fibra alimentar.\"",
+          "* % Valores Diários com base em uma dieta de 2.000 kcal ou 8400 kJ. Seus valores diários podem ser maiores ou menores dependendo de suas necessidades energéticas. **Não Estabelecido."
+        ]
+      },
+      ingredients: {
+        list: "Leite integral, fosfato tricálcio, vitaminas A, C, D e E, ferro e zinco e emulsifiante lecitina de soja.",
+        legend: [
+          "CONTÉM LEITE. CONTÉM LACTOSE. PODE CONTER DERIVADOS DE SOJA.",
+          "NÃO CONTÉM GLÚTEN.",
+          "Manter em local seco e arejado.",
+          "Quando não for utilizado todo o conteúdo, dobre a embalagem e guarde em recipiente fechado e seco. Após aberto, consumir em 30 dias."
+        ],
+        codes: {
+          ean: "7896051130093",
+          dun: "17896051130090",
+          sku: "600306288",
+          validity: "365 dias"
+        }
+      }
+    },
+    {
+      id: "leite-em-po-kids",
+      name: "Leite em Pó Itambé Kids Dez Vitaminas 700g",
+      description: "Rico em vitaminas A, C, D, E, zinco, ferro e cálcio",
+      image: LeiteEmPoKids,
+      nutrition: {
+        portion: "26g (2 colheres de sopa)",
+        items: [
+          { name: "Valor energético", amount: "129 kcal", dailyValue: "6" },
+          { name: "Carboidratos", amount: "10 g", dailyValue: "3" },
+          { name: "Proteínas", amount: "6,4 g", dailyValue: "13" },
+          { name: "Gorduras totais", amount: "7 g", dailyValue: "11" },
+          { name: "Gorduras saturadas", amount: "4,5 g", dailyValue: "23" },
+          { name: "Gorduras trans", amount: "0", dailyValue: "**" },
+          { name: "Fibra alimentar", amount: "0", dailyValue: "0" },
+          { name: "Vitamina A", amount: "120 mcg RE", dailyValue: "15" },
+          { name: "Vitamina C", amount: "15 mg", dailyValue: "15" },
+          { name: "Vitamina D", amount: "2,3 mcg", dailyValue: "15" },
+          { name: "Vitamina E", amount: "2,3 mg", dailyValue: "15" },
+          { name: "Vitamina B1", amount: "0,18 mg", dailyValue: "15" },
+          { name: "Vitamina B2", amount: "0,18 mg", dailyValue: "15" },
+          { name: "Vitamina B3", amount: "2,3 mg", dailyValue: "15" },
+          { name: "Vitamina B6", amount: "0,2 mg", dailyValue: "15" },
+          { name: "Vitamina B9", amount: "60 mcg", dailyValue: "15" },
+          { name: "Vitamina B12", amount: "0,36 mcg", dailyValue: "15" },
+          { name: "Ferro", amount: "2,1 mg", dailyValue: "15" },
+          { name: "Zinco", amount: "1,7 mg", dailyValue: "15" },
+          { name: "Cálcio", amount: "240 mg", dailyValue: "24" }
+        ],
+        legend: [
+          "\"Não contém quantidades significativas de gorduras trans e fibra alimentar.\"",
+          "* % Valores Diários com base em uma dieta de 2.000 kcal ou 8400 kJ. Seus valores diários podem ser maiores ou menores dependendo de suas necessidades energéticas. **Não Estabelecido."
+        ]
+      },
+
+      ingredients: {
+        list: "Leite integral, vitaminas C, E, B3, B6, B1, B2, A, B9, D e B12, minerais ferro e zinco e emulsificante lecitina.",
+        legend: [
+          "Contém leite e derivados de soja. Contém lactose.",
+          "Não contém glúten."
+        ],
+        codes: {
+          ean: "7896051166887",
+          dun: "17896051166884",
+          sku: "600382372",
+          validity: "365 dias"
+        }
+      }
     },
     {
       id: "leite-condensado-nolac",

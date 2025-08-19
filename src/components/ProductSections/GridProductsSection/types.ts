@@ -88,7 +88,9 @@ export const categories = [
       { name: "Leite em Pó Nolac Integral", slug: "leite-em-po-nolac" },
       { name: "Leite em Pó Integral Pouch", slug: "leite-em-po-pouch-integral" },
       { name: "Leite em Pó Instantâneo Pouch", slug: "leite-em-po-instantaneo-pouch" },
+      { name: "Leite em Pó Desnatado Instantâneo Pouch", slug: "leite-em-po-desnatado-instantaneo-pouch" },
       { name: "Composto Lácteo", slug: "composto-lacteo" },
+      { name: "Leite em Pó Kids", slug: "leite-em-po-kids" }
     ],
   },
   {
