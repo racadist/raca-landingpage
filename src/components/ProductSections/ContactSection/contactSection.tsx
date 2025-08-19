@@ -11,7 +11,7 @@ export const representantes = [
     whatsapp: "5581993235217",
   },
   {
-    nome: "Adair Neto",
+    nome: "Adair Nelo",
     regiao: "Interior do Estado",
     whatsapp: "5581993235218",
   },

@@ -63,9 +63,9 @@ export function NutritionSection({ nutrition, ingredients }: NutritionSectionPro
             ))}
           </div>
           <div className="mt-4 text-sm">
-            <p>Código EAN: {ingredients.codes.ean}</p>
-            <p>Código DUN: {ingredients.codes.dun}</p>
-            <p>Código SKU: {ingredients.codes.sku}</p>
+            {ingredients.codes.ean && <p>Código EAN: {ingredients.codes.ean}</p>}
+            {ingredients.codes.dun && <p>Código DUN: {ingredients.codes.dun}</p>}
+            {ingredients.codes.sku && <p>Código SKU: {ingredients.codes.sku}</p>}
             <p>Validade: {ingredients.codes.validity}</p>
           </div>
         </div>

@@ -36,15 +36,15 @@ export function GridProducts() {
                   <Image
                     src={cat.image}
                     alt={cat.name}
-                    width={500}
+                    width={400}
                     height={300}
                     className="h-90 w-full group-hover:scale-105 transition-transform duration-300 object-cover"
                   />
 
                   <div className="absolute inset-0 transition-opacity duration-300 group-hover:opacity-75 rounded-xl" />
 
-                  <div className="absolute bottom-0 left-0 w-full px-5 py-3 bg-gradient-to-t from-black/20 to-transparent">
-                    <h3 className="text-3xl font-poppins font-extrabold text-white drop-shadow-md">{cat.name}</h3>
+                  <div className="absolute bottom-0 left-0 w-full px-2 py-3 bg-gradient-to-t from-black/30 to-transparent">
+                    <h3 className="text-3xl font-poppins font-extrabold text-[#223872] drop-shadow-lg">{cat.name}</h3>
                   </div>
 
                   <div className="absolute top-4 right-4 z-20">

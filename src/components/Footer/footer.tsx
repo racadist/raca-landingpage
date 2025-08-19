@@ -60,7 +60,7 @@ const Footer = () => {
                     <Facebook className="h-5 w-5 transition-transform group-hover:scale-110" />
                   </a>
                   <a
-                    href="#"
+                    href="https://www.linkedin.com/company/ra%C3%A7a-distribui%C3%A7%C3%A3o/"
                     className="group rounded-full bg-white/10 p-3 transition-colors duration-300 hover:bg-white/20"
                   >
                     <Linkedin className="h-5 w-5 transition-transform group-hover:scale-110" />

@@ -69,12 +69,12 @@ export interface Product {
       legend: string[];
     };
     ingredients?: {
-      list: string;
+      list?: string;
       legend: string[];
       codes: {
-        ean: string;
-        dun: string;
-        sku: string;
+        ean?: string;
+        dun?: string;
+        sku?: string;
         validity: string;
       };
     };
@@ -1796,6 +1796,46 @@ export interface Product {
       name: "Charque Tradicional",
       description: "Carne salgada e desidratada",
       image: Charque,
+      nutrition: {
+        portion: "Porção de 100g",
+        items: [
+          { name: "Valor Energético", amount: "141 kcal", dailyValue: "55 kcal" },
+          { name: "Carboidratos", amount: "0 g", dailyValue: "0 g" },
+          { name: "Proteínas", amount: "21 g", dailyValue: "8,9 g" },
+          { name: "Gorduras Totais", amount: "6,2 g", dailyValue: "2,1 g" },
+          { name: "Gorduras Saturadas", amount: "3,1 g", dailyValue: "1,1 g" },
+          { name: "Gorduras Trans", amount: "0 g", dailyValue: "0 g" },
+          { name: "Gorduras Monoinsaturadas", amount: "-", dailyValue: "-" },
+          { name: "Gorduras Poliinsaturadas", amount: "-", dailyValue: "-" },
+          { name: "Fibra Alimentar", amount: "0,7 g", dailyValue: "0,2 g" },
+          { name: "Sódio", amount: "1058 mg", dailyValue: "2220 mg" },
+          { name: "Colesterol", amount: "-", dailyValue: "-" },
+          { name: "Ferro", amount: "-", dailyValue: "-" },
+          { name: "Cálcio", amount: "-", dailyValue: "-" },
+          { name: "Açúcares Totais", amount: "0 g", dailyValue: "0 g" },
+          { name: "Açúcar Total", amount: "-", dailyValue: "-" },
+          { name: "Açúcares Adicionados", amount: "0 g", dailyValue: "0 g" },
+          { name: "Fibras Alimentares", amount: "-", dailyValue: "-" },
+          { name: "Número de Porções", amount: "-", dailyValue: "-" },
+          { name: "Valor Calórico", amount: "-", dailyValue: "-" },
+          { name: "Umidade", amount: "-", dailyValue: "-" },
+          { name: "Cinzas", amount: "-", dailyValue: "-" }
+        ],
+        legend: [
+          "* % Valores Diários com base em uma dieta de 2.000 kcal ou 8400 kJ. Seus valores diários podem ser maiores ou menores dependendo de suas necessidades energéticas. **Não estabelecido."
+        ]
+      },
+
+      ingredients: {
+        legend: [
+          "Quantidade mínima e máxima da caixa é 1, mantendo a conveniência na estocagem.",
+          "Temperatura ambiente.",
+          "Tempo de vida do produto: 180 dias."
+        ],
+        codes: {
+          validity: "180 dias"
+        }
+      }
     }
   ];
   

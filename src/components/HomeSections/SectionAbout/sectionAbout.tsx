@@ -30,7 +30,7 @@ export function SectionAbout() {
             Conheça um pouco sobre a gente
           </h3>
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#223872] font-gilroy mt-2">
-            A única distribuidora Itambé de PE
+            A única distribuidora Itambé de Pernambuco
           </h1>
           <p className="text-base sm:text-lg max-w-2xl text-[#BB1717] font-gilroy mt-6">
             Distribuição com qualidade e confiança, é assim que se faz.

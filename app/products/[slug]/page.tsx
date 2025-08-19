@@ -37,22 +37,22 @@ export default function ProductPage() {
         <div className="relative z-10 flex flex-col items-center w-full mb-10">
           <h1 className="text-5xl font-bold text-center text-white">{product.name}</h1>
           <p className="text-xl text-center px-4 mt-2 text-white">{product.description}</p>
-          {(product.nutrition || product.ingredients) && (
-            <Button
-              onClick={() => setShowNutrition(!showNutrition)}
-              className="bg-[#bb1717] text-white mt-4 text-xl px-6 py-2 hover:bg-[#bb1717] rounded-full cursor-pointer"
-            >
-              Informações Nutricionais
-              {showNutrition ? (
-                <ChevronUp className="inline ml-2 size-6" />
-              ) : (
-                <ChevronDown className="inline ml-2 size-6" />
-              )}
-            </Button>
-          )}
         </div>
       </div>
-
+      {/* Botão de informações nutricionais */}
+      {(product.nutrition || product.ingredients) && (
+        <Button
+          onClick={() => setShowNutrition(!showNutrition)}
+          className="bg-[#bb1717] text-white mt-4 text-xl px-6 py-2 hover:bg-[#bb1717] rounded-full cursor-pointer"
+        >
+          Informações Nutricionais
+          {showNutrition ? (
+            <ChevronUp className="inline ml-2 size-6" />
+          ) : (
+            <ChevronDown className="inline ml-2 size-6" />
+          )}
+        </Button>
+      )}
       {/* Seção expansível */}
       {showNutrition && (
         <NutritionSection

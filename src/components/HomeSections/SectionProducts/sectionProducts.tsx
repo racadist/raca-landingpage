@@ -1,14 +1,14 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
-import { Charque, ProdutosEnlatados, ProdutosLaticinios } from "@/assets";
+import { ProdutosCharque, ProdutosEnlatados, ProdutosLaticinios } from "@/assets";
 import { useRouter } from "next/navigation";
 
 const products = [
   {
     id: 1,
     name: "Charque",
-    image: Charque,
+    image: ProdutosCharque,
   },
   {
     id: 2,
@@ -32,7 +32,7 @@ export function SectionProducts() {
         className={`
           flex overflow-x-auto
           snap-x snap-mandatory
-          scrollbar-hide pb-2 gap-4
+          scrollbar-hide pb-2 gap-8 justify-center
         `}
       >
         {products.map((product, idx) => (
