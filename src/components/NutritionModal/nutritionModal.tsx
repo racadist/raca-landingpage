@@ -48,7 +48,7 @@ export function NutritionSection({ nutrition, ingredients }: NutritionSectionPro
               ))}
             </tbody>
           </table>
-          <div className="mt-2 text-xs text-gray-500 space-y-1">
+          <div className="mt-2 text-sm text-gray-800 space-y-1">
             {nutrition.legend.map((l, i) => (
               <p key={i}>{l}</p>
             ))}
