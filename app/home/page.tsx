@@ -1,9 +1,45 @@
 "use client";
 
 import { SectionAbout, SectionTestimonials, SectionProducts } from "@/components";
+import { useEffect, useState } from "react";
 
+const dynamicWords = [
+  "qualidade",
+  "confiança",
+  "adaptabilidade",
+  "com raça",
+  "parceria",
+  "agilidade",
+  "impacto",
+];
 
 export default function Home() {
+  const [wordIndex, setWordIndex] = useState(0);
+  const [text, setText] = useState("");
+  const [isDeleting, setIsDeleting] = useState(false);
+
+  useEffect(() => {
+    const type = () => {
+      const currentWord = dynamicWords[wordIndex];
+      const updatedText = isDeleting
+        ? currentWord.substring(0, text.length - 1)
+        : currentWord.substring(0, text.length + 1);
+
+      setText(updatedText);
+
+      if (!isDeleting && updatedText === currentWord) {
+        setTimeout(() => setIsDeleting(true), 2000); 
+      } else if (isDeleting && updatedText === "") {
+        setIsDeleting(false);
+        setWordIndex((prev) => (prev + 1) % dynamicWords.length);
+      }
+    };
+
+    const typingSpeed = isDeleting ? 100 : 150;
+    const timeout = setTimeout(type, typingSpeed);
+
+    return () => clearTimeout(timeout);
+  }, [text, isDeleting, wordIndex]);
 
   return (
     <main className="relative">
@@ -12,13 +48,13 @@ export default function Home() {
         className="relative bg-[url('/img/home-bg.png')] bg-cover bg-center bg-no-repeat pt-32 pb-16 z-10"
       >
         <div className="absolute inset-0 bg-black/60 -z-10" />
-
         <div className="container w-full h-[700px] mx-auto px-4 flex items-center justify-center">
-          <div className="text-white text-center max-w-4xl">
-            <h1 className="text-3xl sm:text-5xl md:text-6xl font-extrabold font-gilroy leading-tight mb-6">
-              Distribuindo <br /> Qualidade e Confiança
+          <div className="text-white text-center max-w-8xl">
+            <h1 className="text-5xl sm:text-5xl lg:text-8xl md:text-6xl font-extrabold font-gilroy leading-tight mb-6">
+              Há mais de 30 anos distribuindo <br /> 
+              <span className="text-white">{text}</span>
+              <span className="animate-ping">|</span>
             </h1>
-            <h2 className="text-2xl sm:text-3xl font-light font-gilroy">Desde 1992</h2>
           </div>
         </div>
       </section>

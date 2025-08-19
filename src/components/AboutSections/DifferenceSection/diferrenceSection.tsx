@@ -26,18 +26,19 @@ export function DifferenceSection() {
 
       <SquareImage />
       {/* Conteúdo */}
-      <div className="flex-1 flex flex-col items-center text-center">
-        <h2 className="text-3xl sm:text-4xl md:text-5xl text-[#223872] mb-4 sm:mb-6 font-gilroy font-extrabold">
+      <div className="flex-1 flex flex-col">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl text-[#223872] mb-4 sm:mb-6 font-gilroy font-extrabold text-center">
         O que nos diferencia
         </h2>
-        <p className="text-muted-foreground font-semibold text-base sm:text-lg mb-4 font-poppins">
-        Na Raça Distribuidora, nosso diferencial vai muito além de entregar produtos,
-        entregamos confiança, compromisso e parceria de verdade.          
-        </p>
-        <p className="text-muted-foreground font-semibold text-base sm:text-lg mb-8 font-poppins">
-        Sempre atuando com uma logística ágil e cobertura regional eficaz.
-        </p>
-
+        <div className="max-w-2xl self-center px-3">
+          <p className="text-muted-foreground font-semibold text-base sm:text-lg mb-4 font-poppins text-center lg:text-end">
+          Na Raça Distribuidora, nosso diferencial vai muito além de entregar produtos,
+          entregamos confiança, compromisso e parceria.          
+          </p>
+          <p className="text-muted-foreground font-semibold text-base sm:text-lg mb-8 font-poppins text-center lg:text-end">
+          Sempre atuando com uma logística ágil e cobertura regional eficaz.
+          </p>
+        </div>
          {/* Cards */}
         <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 items-center justify-center">
         {features.map((feature, index) => (
