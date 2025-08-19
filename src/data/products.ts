@@ -71,11 +71,11 @@ export interface Product {
     ingredients?: {
       list?: string;
       legend: string[];
-      codes: {
+      codes?: {
         ean?: string;
         dun?: string;
         sku?: string;
-        validity: string;
+        validity?: string;
       };
     };
   }
@@ -1748,12 +1748,26 @@ export interface Product {
       name: "Sardinha Cabo Verde em Óleo",
       description: "Sardinha em conserva com óleo comestível",
       image: SardinhaOleo,
+      ingredients: {
+        list: " Sardinhas, óleo de soja (soja geneticamente modificada a partir de Bacillus thuringiensis,  Streptomyces viridochromogenes  e  Agrobacterium tumefaciens) e sal.",
+        legend: [
+          "CONTÉM PEIXE.",
+          "Contém derivados de soja",
+        ],
+      }
     },
     {
       id: "sardinha-molhotomate",
       name: "Sardinha Cabo Verde em Molho de Tomate",
       description: "Sardinha em conserva com molho de tomate",
       image: SardinhaMolho,
+      ingredients: {
+        list: " Sardinhas, polpa de tomate, água, óleo de soja (soja geneticamente modificada a partir de Bacillus thuringiensis, Streptomyces viridochromogenes e Agrobacterium tumefaciens), açúcar, cebola, sal, alho, realçador de sabor glutamato monossódico (INS 621) e salsa.",
+        legend: [
+          "CONTÉM PEIXE.",
+          "Contém derivados de soja",
+        ],
+      }
     },
     {
       id: "carne-conserva",

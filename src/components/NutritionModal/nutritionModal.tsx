@@ -8,9 +8,9 @@ interface NutritionSectionProps {
     legend: string[];
   };
   ingredients?: {
-    list: string;
+    list?: string;
     legend: string[];
-    codes: { ean: string; dun: string; sku: string; validity: string };
+    codes?: { ean?: string; dun?: string; sku?: string; validity?: string };
   };
 }
 
@@ -18,13 +18,17 @@ export function NutritionSection({ nutrition, ingredients }: NutritionSectionPro
   if (!nutrition && !ingredients) return null;
 
   return (
-    <div className="container mx-auto my-10 grid grid-cols-1 md:grid-cols-2 gap-8">
+    <div
+      className={`container mx-auto my-10 grid grid-cols-1 ${
+        nutrition ? "md:grid-cols-2" : "text-center max-w-5xl"
+      } gap-8`}
+    >
       {/* Informação Nutricional */}
       {nutrition && (
         <div>
           <div className="mb-4">
-            <h2 className="text-2xl font-bold">Informação Nutricional</h2>
-            <p className="text-sm text-gray-600">{nutrition.portion}</p>
+            <h2 className="text-2xl font-bold text-[#223872]">Informação Nutricional</h2>
+            <p className="text-md text-[#223872]">{nutrition.portion}</p>
           </div>
           <table className="w-full border border-gray-300">
             <thead>
@@ -55,18 +59,18 @@ export function NutritionSection({ nutrition, ingredients }: NutritionSectionPro
       {/* Ingredientes */}
       {ingredients && (
         <div>
-          <h2 className="text-2xl font-bold mb-2">Lista de Ingredientes</h2>
-          <p className="text-sm mb-3">{ingredients.list}</p>
-          <div className="text-xs text-gray-800 space-y-1">
+          <h2 className="text-2xl font-bold mb-2 text-[#223872]">Lista de Ingredientes</h2>
+          <p className="text-md mb-3">{ingredients.list}</p>
+          <div className="text-sm text-[#223872] space-y-1">
             {ingredients.legend.map((l, i) => (
               <p key={i}>{l}</p>
             ))}
           </div>
           <div className="mt-4 text-sm">
-            {ingredients.codes.ean && <p>Código EAN: {ingredients.codes.ean}</p>}
-            {ingredients.codes.dun && <p>Código DUN: {ingredients.codes.dun}</p>}
-            {ingredients.codes.sku && <p>Código SKU: {ingredients.codes.sku}</p>}
-            <p>Validade: {ingredients.codes.validity}</p>
+            {ingredients.codes?.ean && <p>Código EAN: {ingredients.codes.ean}</p>}
+            {ingredients.codes?.dun && <p>Código DUN: {ingredients.codes.dun}</p>}
+            {ingredients.codes?.sku && <p>Código SKU: {ingredients.codes.sku}</p>}
+            {ingredients.codes?.validity && <p>Validade: {ingredients.codes.validity}</p>}
           </div>
         </div>
       )}

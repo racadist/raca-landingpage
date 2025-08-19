@@ -57,20 +57,7 @@ export default function ProductPage() {
       {showNutrition && (
         <NutritionSection
           nutrition={product.nutrition}
-          ingredients={
-            product.ingredients
-              ? {
-                  ...product.ingredients,
-                  list: product.ingredients.list ?? "",
-                  codes: {
-                    ...product.ingredients.codes,
-                    ean: product.ingredients.codes.ean ?? "",
-                    dun: product.ingredients.codes.dun ?? "",
-                    sku: product.ingredients.codes.sku ?? "",
-                  },
-                }
-              : undefined
-          }
+          ingredients={product.ingredients}
         />
       )}
 
