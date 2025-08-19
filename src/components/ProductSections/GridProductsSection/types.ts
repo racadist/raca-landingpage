@@ -56,18 +56,16 @@ export const categories = [
     products: [
       { name: "Doce de Leite Tradicional", slug: "doce-de-leite" },
       { name: "Doce de Leite Pastoso", slug: "doce-de-leite-pastoso" },
-      { name: "Doce de Leite Tradicional BAG", slug: "doce-de-leite-bag" },
-      { name: "Manteiga com Sal", slug: "manteiga-com-sal" },
-      { name: "Manteiga sem Sal", slug: "manteiga-sem-sal" },
+      { name: "Doce de Leite Tradicional BAG", slug: "doce-de-leite-bag" }
     ],
   },
   {
     name: "Leites Regulares",
     image: ProdutosLeitesRegulares,
     products: [
-      { name: "Leite UAT Integral", slug: "leite-integral" },
-      { name: "Leite UAT Semidesnatado", slug: "leite-semidesnatado" },
-      { name: "Leite UAT Desnatado", slug: "leite-desnatado" }
+      { name: "Leite UHT Integral", slug: "leite-integral" },
+      { name: "Leite UHT Semidesnatado", slug: "leite-semidesnatado" },
+      { name: "Leite UHT Desnatado", slug: "leite-desnatado" }
     ]
   },
   {

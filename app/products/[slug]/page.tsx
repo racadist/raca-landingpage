@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import { useParams } from "next/navigation";
 import { motion } from "motion/react";
 import Image from "next/image";
 import { products } from "@/data/products"; 
@@ -8,14 +9,9 @@ import { ChevronDown, ChevronUp } from "lucide-react";
 import { representantes } from "@/components/ProductSections/ContactSection/contactSection";
 import { NutritionSection } from "@/components/NutritionModal/nutritionModal";
 
-
-interface PageProps {
-  params: { slug: string };
-}
-
-export default function ProductPage({ params }: PageProps) {
-  const { slug } = params;
-  const product = products.find((p) => p.id === slug);
+export default function ProductPage() {
+  const params = useParams<{ slug: string }>();
+  const product = products.find((p) => p.id === params.slug);
   const [showNutrition, setShowNutrition] = useState(false);
 
   if (!product) {
