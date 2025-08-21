@@ -21,26 +21,26 @@ const features = [
 
 export function DifferenceSection() {
   return (
-    <section className="py-16 bg-white">
-      <div className="container mx-auto flex flex-col lg:flex-row items-center gap-44 md:gap-40">
+    <section className="py-16 bg-white overflow-x-hidden">
+      <div className="container mx-auto flex flex-col lg:flex-row items-center justify-center gap-10 lg:gap-20 px-4">
 
       <SquareImage />
       {/* Conteúdo */}
-      <div className="flex-1 flex flex-col">
-        <h2 className="text-3xl sm:text-4xl md:text-5xl text-[#223872] mb-4 sm:mb-6 font-gilroy font-extrabold text-center">
+      <div className="flex-1 flex flex-col items-center lg:items-start">
+        <h2 className="text-3xl sm:text-3xl md:text-4xl lg:text-5xl text-[#223872] mb-4 sm:mb-6 font-gilroy font-extrabold text-center lg:text-start">
         O que nos diferencia
         </h2>
-        <div className="max-w-2xl self-center px-3">
-          <p className="text-muted-foreground font-semibold text-base sm:text-lg mb-4 font-poppins text-center lg:text-end">
+        <div className="max-w-2xl self-center lg:self-start">
+          <p className="text-muted-foreground font-semibold text-base sm:text-lg mb-4 font-poppins text-center lg:text-start">
           Na Raça Distribuidora, nosso diferencial vai muito além de entregar produtos,
           entregamos confiança, compromisso e parceria.          
           </p>
-          <p className="text-muted-foreground font-semibold text-base sm:text-lg mb-8 font-poppins text-center lg:text-end">
+          <p className="text-muted-foreground font-semibold text-base sm:text-lg mb-8 font-poppins text-center lg:text-start">
           Sempre atuando com uma logística ágil e cobertura regional eficaz.
           </p>
         </div>
          {/* Cards */}
-        <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 items-center justify-center">
+        <div className="flex flex-wrap gap-4 sm:gap-6 items-center justify-center lg:justify-start">
         {features.map((feature, index) => (
           <motion.div
             key={feature.title}

@@ -2,7 +2,8 @@
 
 export function PillarsSection() {
     return (
-    <section className="relative overflow-hidden mb-16 mt-20 sm:mt-16 my-26">
+    <div className="relative overflow-hidden mt-20 sm:mt-16 px-2 sm:px-6 md:px-12">
+
       {/* Fundo inclinado */}
       <div
         className="absolute inset-0 bg-[#223872] z-0"
@@ -11,7 +12,7 @@ export function PillarsSection() {
         }}
       />
       {/* Conteúdo */}
-      <div className="relative z-10 container mx-auto py-24 px-4 sm:px-10">
+      <div className="relative z-10 py-24 px-4 sm:px-10">
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-gilroy font-extrabold text-white text-center mb-16">
           Nossos Pilares
         </h2>
@@ -53,6 +54,6 @@ export function PillarsSection() {
           </div>
         </div>
       </div>
-    </section>
+      </div>
  )
 };

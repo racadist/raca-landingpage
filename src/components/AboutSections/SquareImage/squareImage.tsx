@@ -1,5 +1,7 @@
+"use client";
 import Image from "next/image";
 import React from "react";
+import { motion } from "motion/react";
 
 interface SquareCardProps {
     className?: string;
@@ -7,8 +9,14 @@ interface SquareCardProps {
   
 export const SquareImage: React.FC<SquareCardProps> = ({ className = '' }) => {
     return (
-      <div className={`relative ${className}`}>
-        <div className="relative w-[320px] h-[320px] sm:w-[420px] sm:h-[420px] mx-auto -ml-8 -mt-8">
+      <motion.div 
+        initial={{ opacity: 0, x: -100 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true }}
+        className={`relative ${className}`}
+      >
+        <div className="relative w-[320px] h-[320px] sm:w-[420px] sm:h-[420px] mx-auto -mt-8 -ml-10 lg:ml-0">
           <div 
             className="absolute inset-4 sm:inset-8 w-[calc(100%-16px)] sm:w-[calc(100%-32px)] h-[calc(100%-16px)] sm:h-[calc(100%-32px)] mb-4"
             style={{
@@ -32,7 +40,7 @@ export const SquareImage: React.FC<SquareCardProps> = ({ className = '' }) => {
             />
           </div>
         </div>
-      </div>
+      </motion.div>
       );
 };
 

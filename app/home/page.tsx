@@ -50,9 +50,10 @@ export default function Home() {
         <div className="absolute inset-0 bg-black/60 -z-10" />
         <div className="container w-full h-[700px] mx-auto px-4 flex items-center justify-center">
           <div className="text-white text-center max-w-8xl">
-            <h1 className="text-5xl sm:text-5xl lg:text-8xl md:text-6xl font-extrabold font-gilroy leading-tight mb-6">
-              Há mais de 30 anos distribuindo <br /> 
-              <span className="text-white">{text}</span>
+            <h2 className="text-xl text-white sm:text-xl lg:text-2xl md:text-xl font-extrabold font-gilroy leading-tight mb-6 uppercase">REFERÊNCIA NO BRASIL EM LOGÍSTICA</h2>
+            <h1 className="text-5xl sm:text-5xl lg:text-7xl md:text-5xl font-extrabold font-gilroy leading-tight mb-6">
+              Há mais de 30 anos distribuindo <br />
+              <span className="bg-[#bb1717] text-white px-4 py-1">{text}</span>
               <span className="animate-ping">|</span>
             </h1>
           </div>
