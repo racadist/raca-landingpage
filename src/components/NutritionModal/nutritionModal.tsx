@@ -19,7 +19,7 @@ export function NutritionSection({ nutrition, ingredients }: NutritionSectionPro
 
   return (
     <div
-      className={`container mx-auto my-10 grid grid-cols-1 ${
+      className={`container mx-auto my-10 grid grid-cols-1 p-4 ${
         nutrition ? "md:grid-cols-2" : "text-center max-w-5xl"
       } gap-8`}
     >
