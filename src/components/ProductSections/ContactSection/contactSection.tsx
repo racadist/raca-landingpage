@@ -26,9 +26,15 @@ export function ContactMapSection() {
       ref={sectionRef}
       className="w-full px-4 py-24 font-gilroy"
     >
-      <h2 className="text-center text-2xl md:text-4xl font-bold mb-10 text-[#223872]">
+     <h2
+        className={`
+          text-4xl sm:text-5xl font-extrabold text-center text-[#223872] font-gilroy mb-8
+          transition-all duration-1000 ease-out
+          ${isInView ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-10"}
+        `}
+      >
         Entre em contato com nossos representantes
-      </h2>
+    </h2>
 
       <div className="flex flex-col lg:flex-row gap-10 max-w-6xl mx-auto items-center">
         {/* Mapa */}

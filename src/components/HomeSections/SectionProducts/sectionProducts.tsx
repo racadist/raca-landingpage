@@ -9,16 +9,19 @@ const products = [
     id: 1,
     name: "Charque",
     image: ProdutosCharque,
+    slug: "charque",
   },
   {
     id: 2,
     name: "Itambé",
     image: ProdutosLaticinios,
+    slug: "itambe",
   },
   {
     id: 3,
     name: "Enlatados",
     image: ProdutosEnlatados,
+    slug: "enlatados",
   },
 ];
 
@@ -60,7 +63,13 @@ export function SectionProducts() {
                 {product.name}
               </span>
               <button
-                onClick={() => router.push("/products")}
+                onClick={() => {
+                  if (product.slug === "charque" || product.slug === "enlatados") {
+                    router.push(`/products#${product.slug}`);
+                  } else {
+                    router.push("/products");
+                  }
+                }}
                 className="px-4 py-2 bg-[#223872] text-white font-semibold font-poppins rounded hover:bg-[#BB1717] transition cursor-pointer"
               >
                 Veja mais

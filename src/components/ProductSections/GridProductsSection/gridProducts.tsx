@@ -1,7 +1,7 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import { categories } from "./types";
 import { Sheet, SheetContent } from "@/components/ui/sheet";
@@ -13,6 +13,22 @@ export function GridProducts() {
   const [showAll, setShowAll] = useState(false);
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [selectedCategory, setSelectedCategory] = useState<string>("");
+
+  useEffect(() => {
+    const hash = window.location.hash.substring(1);
+    if (hash) {
+      const categoryExists = categories.some((cat) => cat.slug === hash);
+      if (categoryExists) {
+        setShowAll(true);
+        setTimeout(() => {
+          const element = document.getElementById(hash);
+          if (element) {
+            element.scrollIntoView({ behavior: "smooth", block: "start" });
+          }
+        }, 50);
+      }
+    }
+  }, []);
 
   const visibleCategories = showAll ? categories : categories.slice(0, INITIAL_VISIBLE);
 
@@ -30,6 +46,7 @@ export function GridProducts() {
             return (
               <div
                 key={realIdx}
+                id={cat.slug}
                 className="flex flex-col overflow-hidden shadow-lg"
               >
                 <div className="relative group">

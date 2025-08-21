@@ -45,7 +45,7 @@ const responsive = {
 
 export function SegmentsSection() {
   return (
-    <section className="py-24 text-center ">
+    <section className="py-18 text-center ">
 
       <div className="px-4">
       <Carousel
