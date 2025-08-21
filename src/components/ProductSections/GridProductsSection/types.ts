@@ -131,7 +131,7 @@ export const categories = [
     ],
   },
   {
-    name: "Carnes Salgadas",
+    name: "Charque",
     slug: "charque",
     image: ProdutosCharque,
     products: [
