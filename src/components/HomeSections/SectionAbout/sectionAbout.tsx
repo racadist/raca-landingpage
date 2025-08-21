@@ -1,12 +1,20 @@
+"use client";
 import { Check } from "lucide-react";
 import { Button } from "../../ui/button";
 import Image from "next/image";
+import { motion } from "motion/react";
 
 export function SectionAbout() {
   return (
-    <div className="container mx-auto px-4 mt-10">
+    <div className="container mx-auto px-4 mt-10 overflow-hidden">
       <div className="flex flex-col md:flex-row gap-10">
-        <div className="flex-1 flex items-center justify-center relative min-h-[400px] -mt-20">
+        <motion.div
+          initial={{ opacity: 0, x: -100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+          className="flex-1 flex items-center justify-center relative min-h-[400px] -mt-20"
+        >
           <div className="relative w-full max-w-[400px] h-[400px] sm:h-[450px]">
             <div className="absolute top-8 right-28 sm:right-32 w-[240px] sm:w-[320px] h-[240px] sm:h-[320px] rounded-xl bg-[#19233A] z-0" />
             <Image
@@ -24,8 +32,14 @@ export function SectionAbout() {
               className="absolute bottom-[-30px] sm:bottom-[-40px] right-0 left-20 md:left-0 xl:-left-20 xl:right-80 w-[200px] sm:w-[320px] md:w-[460px] h-56 rounded-xl object-cover z-20 shadow-xl"
             />
           </div>
-        </div>
-        <div className="flex-1">
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, x: 100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+          className="flex-1"
+        >
           <h3 className="text-xl sm:text-2xl md:text-3xl font-medium font-poppins text-muted-foreground">
             Conheça um pouco sobre a gente
           </h3>
@@ -62,7 +76,7 @@ export function SectionAbout() {
           >
             Saiba mais
           </Button>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

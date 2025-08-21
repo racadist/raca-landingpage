@@ -1073,7 +1073,7 @@ export interface Product {
     },
     {
       id: "leite-em-po-integral-instantaneo",
-      name: "Leite em pó Integral Instantâneo",
+      name: "Leite em Pó Integral Instantâneo",
       description: "Leite em pó integral instantâneo",
       image: LeiteEmPoIntegralInstantaneo,
       nutrition: {
@@ -1113,7 +1113,7 @@ export interface Product {
     },
     {
       id: "leite-em-po-desnatado-instantaneo",
-      name: "Leite em pó Desnatado Instantâneo",
+      name: "Leite em Pó Desnatado Instantâneo",
       description: "Leite em pó desnatado instantâneo",
       image: LeiteEmPoDesnatadoInstantaneo,
       nutrition: {
@@ -1158,7 +1158,7 @@ export interface Product {
     },
     {
       id: "leite-em-po-nolac",
-      name: "Leite em Poó Nolac Integral",
+      name: "Leite em Pó Nolac Integral",
       description: "Leite em pó sem lactose",
       image: LeiteEmPoNolac,
        nutrition: {

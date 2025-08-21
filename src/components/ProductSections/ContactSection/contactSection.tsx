@@ -24,7 +24,7 @@ export function ContactMapSection() {
   return (
     <section
       ref={sectionRef}
-      className="w-full px-4 py-24 bg-[#F9FAFB] font-gilroy"
+      className="w-full px-4 py-24 font-gilroy"
     >
       <h2 className="text-center text-2xl md:text-4xl font-bold mb-10 text-[#223872]">
         Entre em contato com nossos representantes

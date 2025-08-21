@@ -51,7 +51,7 @@ export function SegmentsSection() {
       <Carousel
           responsive={responsive}
           autoPlay
-          autoPlaySpeed={2000}
+          autoPlaySpeed={1000}
           infinite
           arrows={false}
           showDots={false}
