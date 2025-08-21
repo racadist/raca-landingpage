@@ -22,8 +22,7 @@ const features = [
 export function DifferenceSection() {
   return (
     <section className="py-16 bg-white overflow-x-hidden">
-      <div className="container mx-auto flex flex-col lg:flex-row items-center justify-center gap-10 lg:gap-20 px-4">
-
+    <div className="max-w-7xl mx-auto flex flex-col xl:flex-row items-center justify-center gap-10 xl:gap-20 px-4">
       <SquareImage />
       {/* Conteúdo */}
       <div className="flex-1 flex flex-col items-center lg:items-start">
