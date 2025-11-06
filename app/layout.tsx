@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono, Poppins } from "next/font/google";
 import "./globals.css";
 import {TopBar} from "@/components/TopBar/topBar";
+import { GoogleTagManager } from './gtm'
 import Footer from "@/components/Footer/footer";
 
 const geistSans = Geist({
@@ -34,10 +35,11 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${poppins.variable}  antialiased`}
       >
+        <GoogleTagManager />
         <TopBar />
         {children}
         <Footer />
       </body>
     </html>
   );
-}
+}p
