@@ -3,16 +3,11 @@ frontend:
   phases:
     preBuild:
       commands:
-        # Garante que estamos com Node 18+ (necessário pro Next 15)
-        - nvm install 18
-        - nvm use 18
-        # Instala o pnpm globalmente
-        - npm install -g pnpm
-        # Instala as dependências
+        - corepack enable
+        - corepack prepare pnpm@latest --activate
         - pnpm install
     build:
       commands:
-        # Gera o build do Next.js
         - pnpm run build
   artifacts:
     baseDirectory: .next
@@ -21,4 +16,8 @@ frontend:
   cache:
     paths:
       - node_modules/**/*
+      - .next/cache/**/*
       - ~/.pnpm-store/**/*
+environment:
+  runtime-versions:
+    nodejs: 20

@@ -23,6 +23,33 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: "Raça Distribuição",
+  description:
+    "A Raça Distribuição é referência em distribuição de alimentos, bebidas e produtos de consumo. Atendemos com excelência em todo o Brasil.",
+  keywords: [
+    "Raça Distribuição",
+    "distribuidora",
+    "alimentos",
+    "bebidas",
+    "atacado",
+    "varejo",
+    "qualidade"
+  ],
+  openGraph: {
+    title: "Raça Distribuição – Distribuidora de Alimentos e Bebidas",
+    description:
+      "Conheça a Raça Distribuição: excelência em logística e entrega de produtos de qualidade em todo o país.",
+    url: "https://www.racadist.com.br",
+    siteName: "Raça Distribuição",
+    locale: "pt_BR",
+    type: "website"
+  },
+  robots: {
+    index: true,
+    follow: true
+  },
+  alternates: {
+    canonical: "https://www.racadist.com.br"
+  }
 };
 
 export default function RootLayout({
