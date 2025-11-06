@@ -40,8 +40,8 @@ export function SectionTestimonials() {
             alt="Quote Big"
             className="absolute -top-6 -left-6 sm:-top-12 sm:-left-12 w-12 h-12 sm:w-24 sm:h-24 z-0"
           />
-          <div className="bg-[#19233A] text-white rounded shadow-lg px-4 sm:px-16 py-6 sm:py-16 z-10 relative min-h-[200px] sm:h-72 flex flex-col justify-between">
-            <p className="text-base sm:text-xl md:text-2xl font-poppins mb-4 sm:mb-8">
+          <div className="bg-[#19233A] text-white rounded shadow-lg px-4 sm:px-16 py-6 sm:py-16 z-10 relative min-h-[200px] sm:min-h-72 flex flex-col justify-between">
+            <p className="text-base sm:text-xl md:text-2xl font-poppins mb-4 sm:mb-8 break-words">
               {testimonials[current].text}
             </p>
             <div className="self-end">
